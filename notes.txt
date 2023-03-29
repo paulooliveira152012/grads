@@ -1,0 +1,3 @@
+replicate grads website
+
+- I removed the class "navbar-brand" from the a element inside the nav because it was giving t text color black. I want white.
