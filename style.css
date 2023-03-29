@@ -27,7 +27,7 @@ header img {
 }
 
 .hero {
-    background-image: url(/images/hero.jpg);
+    background-image: url(./images/hero.jpg);
     background-size: cover;
     background-position: center;
     height: 300px;
