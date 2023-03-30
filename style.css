@@ -173,6 +173,7 @@ article .left {
 }
 
 footer {
+    width: 100%;
     height: 400px;
     background-color: #002e47;
     color: white;
@@ -209,7 +210,7 @@ footer .apple {
 
 footer .google {
     width: 70%;
-    height: 40px;
+    /* height: 40px; */
     margin-top: 40px;
     margin-bottom: 20px;
 }
@@ -237,15 +238,30 @@ footer i {
 }
 
 @media screen and (max-width: 768px) {
+    footer {
+        /* font-size: 10px; */
+        height: auto;
+    }
+
     footer h2 {
-        font-size: 20px;
+        font-size: 15px;
+        /* margin: 20px; */
+    }
+
+    footer a {
+        font-size: 10px;
     }
 
     .icons {
-        width: 100%;
-        height: 50pxpx;
-
+        /* width: 100%; */
+        /* height: 50px; */
         display: flex;
+    }
+
+    footer i {
+        font-size: 20px;
+
+        /* background-color: red; */
     }
 
     .getIt {
@@ -254,12 +270,31 @@ footer i {
 
     .socialMedia {
         display: block;
-        /* background-color: purple; */
+        padding: 20px;
     }
 
     .hide {
         display: block;
         /* background-color: red; */
         margin-top: 20px;
+        /* padding: 20px; */
+    }
+
+    .contact {
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    footer img {
+        margin: 0;
+        padding: 0;
+    }
+
+    footer i {
+        margin: 5px;
+    }
+
+    footer .google {
+        margin: 0;
     }
 }
