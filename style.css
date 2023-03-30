@@ -26,6 +26,10 @@ header img {
     display: none;
 }
 
+/* .collapse li {
+    color: white;
+} */
+
 .hero {
     background-image: url(./images/hero.jpg);
     background-size: cover;
@@ -134,16 +138,12 @@ main {
 
 article {
     margin-top: 20px;
+    margin: auto;
     /* background-color: #027DBF; */
     padding: 20px;
     display: flex;
 }
 
-article .right {
-    /* flex: 1; */
-    /* background-color: red; */
-    width: 50%;
-}
 
 article .left {
     /* flex: 3; */
@@ -157,6 +157,15 @@ article .left {
     /* color: white; */
 }
 
+article .right {
+    /* flex: 1; */
+    /* background-color: red; */
+    width: 50%;
+}
+
+article .right h2 {
+    margin-left: 20px;
+}
 @media screen and (max-width: 768px) {
     article {
         display: block;
@@ -164,11 +173,13 @@ article .left {
 
     article .left {
         width: 90%;
+        margin: auto;
     }
 
     article .right {
         width: 90%;
         padding: 20px;
+        margin: auto;
     }
 }
 
@@ -179,6 +190,10 @@ footer {
     color: white;
     display: flex;
     justify-content: space-evenly;
+}
+
+footer h2 {
+    font-size: 100%;
 }
 
 .socialMedia {
@@ -205,7 +220,8 @@ footer .contact {
 footer .apple {
     margin-top: 20px;
     width: 70%;
-    height: 40px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 footer .google {
@@ -217,6 +233,7 @@ footer .google {
 
 footer img {
     width: 90%;
+    max-width: 200px;
     position:static;
     border-radius: 5px;
     cursor: pointer;
@@ -282,16 +299,11 @@ footer i {
         /* padding: 20px; */
     }
 
+    
+
     .contact {
         padding: 20px;
         overflow: hidden;
-
-    }
-
-    footer img {
-        margin: 0;
-        padding: 0;
-        
     }
 
     footer i {
