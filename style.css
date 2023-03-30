@@ -45,6 +45,7 @@ header img {
 /* about section */
 
 .aboutSection {
+    margin-top: 20px;
     color: white;
     display: flex;
     background-color: #027DBF;
