@@ -165,6 +165,10 @@ article .right h2 {
     }
 }
 
+footer {
+    margin-top: 20px;
+}
+
 footer .footerContent {
     width: 100%;
     height: auto;
