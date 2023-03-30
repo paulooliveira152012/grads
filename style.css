@@ -183,13 +183,13 @@ article .right h2 {
     }
 }
 
-footer {
+footer .footerContent {
     width: 100%;
-    height: 400px;
+    height: auto;
     background-color: #002e47;
     color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 footer h2 {
@@ -198,12 +198,15 @@ footer h2 {
 
 .socialMedia {
     /* background-color: red; */
+    width: 80%;
     flex: 1;
     padding: 20px;
+    margin-left: 20px;
 }
 
 .getIt {
     /* background-color: green; */
+    width: 80%;
     flex: 1;
     padding: 20px;
 }
@@ -213,6 +216,7 @@ footer li {
 }
 
 footer .contact {
+    width: 80%;
     flex: 1;
     padding: 20px;
 }
@@ -227,12 +231,12 @@ footer .apple {
 footer .google {
     width: 70%;
     /* height: 40px; */
-    margin-top: 40px;
+    /* margin-top: 40px; */
     margin-bottom: 20px;
 }
 
 footer img {
-    width: 90%;
+    width: 60%;
     max-width: 200px;
     position:static;
     border-radius: 5px;
@@ -254,8 +258,20 @@ footer i {
     display: none;
 }
 
+.disclaimer {
+    width: 100%;
+    margin-top: auto;
+    background-color: #002e47;
+    color:#195c7f;
+    box-sizing: border-box;
+    margin: 0;
+    padding-bottom: 20px;
+    padding-top: 100px;
+    padding: 10px;
+}
+
 @media screen and (max-width: 768px) {
-    footer {
+    footer .footerContent {
         /* font-size: 10px; */
         height: auto;
     }
@@ -298,8 +314,6 @@ footer i {
         margin-top: 20px;
         /* padding: 20px; */
     }
-
-    
 
     .contact {
         padding: 20px;
