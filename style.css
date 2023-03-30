@@ -26,10 +26,6 @@ header img {
     display: none;
 }
 
-/* .collapse li {
-    color: white;
-} */
-
 .hero {
     background-image: url(./images/hero.jpg);
     background-size: cover;
@@ -46,8 +42,6 @@ header img {
     text-align: center;
 }
 
-
-
 /* about section */
 
 .aboutSection {
@@ -57,15 +51,12 @@ header img {
 }
 
 .aboutSection .left {
-    /* background-color: lightgray; */
     padding: 30px;
     height: 100%;
-    /* position:absolute; */
     width: 50%;
 }
 
 .aboutSection .right {
-    /* background-color: green; */
     padding: 50px;
     width: 60%;   
 }
@@ -82,12 +73,10 @@ header img {
 
     .aboutSection .left {
         margin: auto;
-        /* background-color: red; */
         width: 90%;
     }
 
     .aboutSection .right {
-        /* background-color: yellow; */
         margin: auto;
         padding: 0;
         margin-bottom: 25px;
@@ -135,31 +124,24 @@ main {
 
 
 /* article section */
-
 article {
     margin-top: 20px;
     margin: auto;
-    /* background-color: #027DBF; */
     padding: 20px;
     display: flex;
 }
 
 
 article .left {
-    /* flex: 3; */
     padding: 20px;
     font-size: 30px;
     color: black;
     width: 50%;
-    /* background-color:rgba(250, 235, 215, 0.483); */
     background-color: #027dbf30;
     border-radius: 10px;
-    /* color: white; */
 }
 
 article .right {
-    /* flex: 1; */
-    /* background-color: red; */
     width: 50%;
 }
 
@@ -197,7 +179,6 @@ footer h2 {
 }
 
 .socialMedia {
-    /* background-color: red; */
     width: 80%;
     flex: 1;
     padding: 20px;
@@ -205,7 +186,6 @@ footer h2 {
 }
 
 .getIt {
-    /* background-color: green; */
     width: 80%;
     flex: 1;
     padding: 20px;
@@ -230,8 +210,6 @@ footer .apple {
 
 footer .google {
     width: 70%;
-    /* height: 40px; */
-    /* margin-top: 40px; */
     margin-bottom: 20px;
 }
 
@@ -272,13 +250,11 @@ footer i {
 
 @media screen and (max-width: 768px) {
     footer .footerContent {
-        /* font-size: 10px; */
         height: auto;
     }
 
     footer h2 {
         font-size: 15px;
-        /* margin: 20px; */
     }
 
     footer a {
@@ -286,15 +262,11 @@ footer i {
     }
 
     .icons {
-        /* width: 100%; */
-        /* height: 50px; */
         display: flex;
     }
 
     footer i {
         font-size: 20px;
-
-        /* background-color: red; */
     }
 
     .getIt {
@@ -305,14 +277,11 @@ footer i {
         margin-left: 30px;
         display: block;
         padding: 20px;
-        /* background-color: red; */
     }
 
     .hide {
         display: block;
-        /* background-color: red; */
         margin-top: 20px;
-        /* padding: 20px; */
     }
 
     .contact {
