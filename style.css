@@ -45,6 +45,9 @@ header img {
     color: yellow;
     font-size: 40px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .hero2 {
@@ -64,7 +67,7 @@ header img {
     margin-top: 20px;
     width: 90%;
     height: auto;
-    background-color:#027dbf4d;
+    /* background-color:#027dbf4d; */
     padding: 50px;
     border-radius: 20px;
     margin-bottom: 100px;
