@@ -59,6 +59,7 @@ header img {
 
 .article2 {
     font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
     margin: auto;
     margin-top: 20px;
     width: 90%;
@@ -298,6 +299,7 @@ footer i {
     padding-bottom: 20px;
     padding-top: 100px;
     padding: 10px;
+    text-align: justify;
 }
 
 @media screen and (max-width: 768px) {
