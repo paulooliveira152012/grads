@@ -91,31 +91,7 @@ header img {
   .slide.active {
     opacity: 1;
   }
-
-  /* .marketPlace {
-    background-image: url(./images/cash.avif);
-}
-
-.tutoring {
-    background-image: url(./images//tutoring.jpg);
-}
-
-.rating {
-    background-image: url(./images/rating.jpg) ;
-}
-
-.rideShare {
-    background-image: url(./images/rideshare.jpeg);
-} */
-
-
-
-
-
-
   /* end of slide portion */
-
-
 
 
 .title {
@@ -153,6 +129,22 @@ header img {
     border-radius: 20px;
     margin-bottom: 100px;
 }
+
+/* dots */
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    opacity: 1;
+  }
+  
 
 @media screen and (max-width: 768px) {
 
