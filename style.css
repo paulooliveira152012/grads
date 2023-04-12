@@ -26,19 +26,6 @@ header img {
     display: none;
 }
 
-.hero {
-    background-image: url(./images/hero.jpg);
-    /* background-size: cover;
-    background-position: center;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.6; */
-}
-
-
-
 /* slide portion */
 .slider {
     width: 100%;
@@ -48,8 +35,8 @@ header img {
     color: white;
     /* margin-top: 20px; */
   }
-  
-  .slide {
+
+ .slide {
     position: absolute;
     top: 0;
     left: 0;
@@ -57,38 +44,73 @@ header img {
     height: 100%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-  }
-
-  .slide img {
-    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .slide div {
     background-size: cover;
     background-position: center;
+    width: 100%;
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* opacity: 0.6; */
+    opacity: 0.6;
   }
+
+
+/* .hero {
+    background-image: url(./images/hero.jpg);
+} */
+
+.slide h1 {
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+  
+  
+
+  .slide div img {
+    width: 100%;
+  }
+
+  /* .slide div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+  } */
+
+  /* .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+  } */
 
   .slide h1 {
     background-color: black;
     padding: 20px;
     border-radius: 10px;
-    /* opacity: 1; */
+  }
+
+  .slide h1:hover {
+    background-color: red;
+    cursor: pointer;
+    color: red;
   }
   
   .slide.active {
     opacity: 1;
   }
 
-  .slide .active h1 {
-    opacity: 1;
-  }
-
-  .marketPlace {
+  /* .marketPlace {
     background-image: url(./images/cash.avif);
 }
 
@@ -102,7 +124,7 @@ header img {
 
 .rideShare {
     background-image: url(./images/rideshare.jpeg);
-}
+} */
 
 
 
@@ -173,7 +195,7 @@ header img {
 /* about section */
 
 .aboutSection {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     color: white;
     display: flex;
     background-color: #027DBF;
