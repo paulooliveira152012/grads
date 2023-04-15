@@ -1,0 +1,3 @@
+initiate a npx app and utilize express in to create and use components
+to display each section of the slide under the slider section.
+
