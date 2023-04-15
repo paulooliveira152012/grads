@@ -243,6 +243,10 @@ header img {
 .row {
     /* background-color: pink; */
     display: block;
+    height: 400px;
+}
+
+.col {
     height: 300px;
 }
 
@@ -250,20 +254,31 @@ header img {
     width: 100%;
 }
 
+#image0 {
+    background-image: url("./images/appScreenshot/IMG_6612.jpg");
+    background-size: cover;
+    margin-left: 10%; 
+    margin-top: 20px;
+}
+
 #image1 {
-    background-color: purple; 
+    /* background-color: purple;  */
+    background-image: url("./images/appScreenshot/IMG_6613.jpg");
+    background-size: cover;
     margin-left: 10%; 
     margin-top: 20px;
 }
 
 #image2 {
-    background-color: green;
+    background-image: url("./images/appScreenshot/IMG_6614.jpg");
+    background-size: cover;
     margin-left: 19.5%; 
     margin-top: 30px;
 }
 
 #image3 {
-    background-color: yellow; 
+    background-image: url("./images/appScreenshot/IMG_6615.jpg");
+    background-size: cover;
     margin-left: 28%; 
     margin-top: 40px;
 }
@@ -369,12 +384,19 @@ header img {
     /* background-color: blue; */
 }
 
+.container .row {
+    /* background-color: red; */
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+
 .right .container .row .col {
     position:absolute;
     width: 200px;
-    height: 250px;
+    height: 100%;
     background-color: red;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 /* @media screen and {max-width: ;
