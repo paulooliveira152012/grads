@@ -468,6 +468,13 @@ article .right h2 {
     }
 }
 
+/* contact section */
+.contactForm {
+    display: block;
+    /* background-color: red; */
+    height: 500px;
+}
+
 footer {
     margin-top: 20px;
 }
