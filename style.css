@@ -141,11 +141,12 @@ header img {
   }
 
   .slide h1:hover {
-    background-color:#002e47;
-    cursor: pointer;
+    /* background-color:#002e47; */
+    cursor: copy;
     color: white;
     opacity: 1;
     transition: .1s;
+    cursor: pointer;
   }
   
   .slide.active {
