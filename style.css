@@ -370,7 +370,7 @@ header img {
     } */
 
     .aboutSection .right .row {
-        background-color: purple;
+        /* background-color: purple; */
         width: 2000px; 
         display: block;
     }
