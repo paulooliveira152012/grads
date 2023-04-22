@@ -171,8 +171,83 @@ header img {
         width: 100%;
         text-align: center;
         border-radius: 0;
-        background-color: #002e47;
+        background-color: black;
     }
+
+    /* containers section */
+    .temporary article .right {
+        /* background-color: red; */
+        margin: 0;
+        padding: 0;
+        /* width: 100%; */
+    }
+
+    .temporary article {
+        display: flex;
+    }
+
+    .temporary article .left {
+        background-color: red;
+        display: none;
+    }
+
+    .temporary article .right h2 {
+        font-size: 16px;
+    }
+
+    .temporary article .right li {
+        font-size: 14px;
+    }
+
+    .temporary #studyGroupsSection img {
+        display: none;
+    }
+
+    .temporary #studyGroupsSection {
+        /* background-color: blue; */
+        padding-bottom: 0;
+    }
+
+    .temporary #makeMoney {
+        /* height: 100%; */
+        /* background-color: green; */
+        padding-bottom: 0;
+    }
+
+    .temporary #makeMoney .right {
+        /* margin-top: 20px; */
+    }
+
+    .temporary #makeMoney .red {
+        /* bottom: 0; */
+    }
+
+    .temporary #miscelaneas {
+        /* background-color: red; */
+        padding-bottom: 0;
+    }
+
+    .downloadSection div {
+        /* background-color: purple; */
+        margin: auto;
+        width: 100%;
+    }
+
+    .downloadSection .content{
+        /* background-color: red; */
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .downloadSection .content .apple {
+        /* background-color: green; */
+    }
+
+    .downloadSection img {
+        /* width: 100%; */
+        /* display: none; */
+    }
+
 }
 
 
@@ -739,13 +814,14 @@ article img {
 
 .downloadSection div {
     /* background-color: green; */
-    width: 40%;
+    width: 70%;
     text-align: center;
 }
 
 .downloadSection img {
     width: 70%;
     border-radius: 10px;
+    margin: 10px;
 }
 
 
