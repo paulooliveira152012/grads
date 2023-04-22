@@ -371,16 +371,16 @@ header img {
     }
 }
 
-.imagesSection {
+/* .imagesSection {
     width: 100%;
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
-}
+} */
 
-.imagesSection img {
+/* .imagesSection img {
     width: 30%;
-}
+} */
 
 /* end of about section */
 
@@ -485,8 +485,6 @@ article {
 /* ////////////////////////////////////////// */
 
 
-
-
 article .left {
     color: white;
     width: 50%;
@@ -577,6 +575,24 @@ article img {
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////// */
+
+.downloadSection .content {
+    display: flex;
+    justify-content:right;
+    background-color: red;
+    width: auto;
+    margin: auto;
+}
+
+.downloadSection img {
+    width: 70%;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+
+
+
 /* contactForm section */
 .contactForm {
     display: flex;
