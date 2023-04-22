@@ -361,6 +361,27 @@ header img {
     } */
 }
 
+/* about section screen 767 */
+@media screen and (max-width: 767px) {
+    .aboutSection .right {
+        /* display: none */
+        background-color: red;   
+    }
+
+    .aboutSection .right .row {
+        background-color: purple;
+        width: 2000px; 
+        display: block;
+    }
+}
+
+@media screen and (max-width: 548px) {
+    .aboutSection img {
+        width: 30%;
+    }
+}
+
+
 @media screen and (max-width:400px) {
     .right img {
         width: 30%;
@@ -394,7 +415,7 @@ header img {
     display: block;
 } */
 
-@media screen and (max-width:768px){
+/* @media screen and (max-width:768px){
     .imagesSection {
         width: 100%;
         display: flex;
@@ -411,7 +432,7 @@ header img {
         margin: auto;
         
     }
-}
+} */
 
 
 /* article section */
@@ -460,16 +481,20 @@ article {
     /* background-color: red; */
 }
 
-.temporary #makeMoney .left {
+/* .temporary #makeMoney .left {
     background-image: url("./images/cash.jpg");
     background-size: cover;
     background-position: center;
+} */
+
+.temporary {
+
 }
 
-.temporary #miscelaneas .left{
+/* .temporary #miscelaneas .left{
     background-image: url("./images/sections/miscelaneas.jpg");
     background-size: cover;
-}
+} */
 
 @media screen and (max-width: 1300px) {
     .temporary .text  {
@@ -538,14 +563,32 @@ article img {
     justify-content: center;
 }
 @media screen and (max-width: 768px) {
-    article {
+
+  
+
+    article  {
         display: block;
+        /* background-color: red; */
     }
 
 
     article .left {
+        display: block;
+    }
+
+/* 
+    O PROBLEMA E QUE NO PRIMEIRO ARTICLE ESTOU USANDO UMA IMAGEM, MAS NAS
+    OUTRAS ESTOU USANDO UMA DIV E IMPLEMENTANDO O BACKGROUNDIMAGE POR CSS.
+    SOLUCAO: DEIXAR AS 3 IMAGESN SENDO DISPLAYED DE FORMA PADRAO PARA CSS
+    PADRAO.
+ */
+
+    article .left {
         width: 90%;
         margin: auto;
+        background-color: blue;
+        display: block;
+        width: 100%;
     }
 
     article .right {
