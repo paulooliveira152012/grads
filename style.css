@@ -576,16 +576,35 @@ article img {
 
 /* ///////////////////////////////////////////////////////////////////////////////// */
 
+.downloadSection {
+    width: 90%;
+    margin: auto;
+    /* background-color: red; */
+    padding: 50px;
+}
+
+.downloadSection h2 {
+    text-align: center;
+}
+
 .downloadSection .content {
     display: flex;
-    justify-content:right;
-    background-color: red;
+    justify-content: space-evenly;
+    /* background-color: red; */
     width: auto;
     margin: auto;
+    /* width: 70%; */
+}
+
+.downloadSection div {
+    /* background-color: green; */
+    width: 40%;
+    text-align: center;
 }
 
 .downloadSection img {
     width: 70%;
+    border-radius: 10px;
 }
 
 
