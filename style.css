@@ -229,6 +229,7 @@ header img {
 
     .downloadSection div {
         /* background-color: purple; */
+        flex-direction: column;
         margin: auto;
         width: 100%;
     }
@@ -814,6 +815,7 @@ article img {
 
 .downloadSection div {
     /* background-color: green; */
+    display: flex;
     width: 70%;
     text-align: center;
 }
