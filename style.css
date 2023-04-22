@@ -3,14 +3,9 @@ body {
 }
 
 .navbar {
-    /* background-color: #027DBF; */
     background-color: rgb(255, 0, 0);
     color: white;
 }
-
-/* a {
-    color: white;
-} */
 
 .navbar-light .navbar-nav {
     color: white;
@@ -39,8 +34,6 @@ header img {
     display: none;
 }
 
-/* ///////////////////////////////////////////////////////////////////////////////// */
-
 /* slide portion */
 .slider {
     width: 100%;
@@ -48,8 +41,6 @@ header img {
     overflow: hidden;
     position: relative;
     color: white;
-    /* margin-top: 20px; */
-    /* background-color: red; */
   }
 
  .slide {
@@ -57,7 +48,6 @@ header img {
     top: 0;
     left: 0;
     width: 100%;
-    /* height: 100%; */
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     display: flex;
@@ -89,16 +79,6 @@ header img {
     background-color: green;
     
   }
-  
-
-  /* .slide img {
-    width: 100%;
-    height: 100%;
-  } */
-
-/* .hero {
-    background-image: url(./images/hero.jpg);
-} */
 
 .hero {
     background-image: url("./images/hero.jpg");
@@ -136,12 +116,10 @@ header img {
   .slide h1 {
     padding: 20px;
     border-radius: 10px;
-    /* background-color:#027DBF; */
     background-color: black;
   }
 
   .slide h1:hover {
-    /* background-color:#002e47; */
     cursor: copy;
     color: white;
     opacity: 1;
@@ -175,37 +153,11 @@ header img {
     }
 }
 
-
-/* dots NOT IMPLEMENTED USED YET*/
-.dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.5;
-    margin: 0 5px;
-    cursor: pointer;
-  }
-  
-  .dot.active {
-    opacity: 1;
-  }
-  
-
-
-  /* end of slide portion */
-/* ///////////////////////////////////////////////////////////////////////////////// */
-
-
-/* ///////////////////////////////////////////////////////////////////////////////// */
+/* end of slide portion */
 /* about section */
 
 .aboutSection {
-    /* margin-top: 20px; */
-    /* color: white; */
     display: flex;
-    /* background-color: #027DBF; */
-    /* background-color: black; */
     background-color: black;
     color: white;
     border-radius: 20px;
@@ -217,67 +169,36 @@ header img {
 .aboutSection .left {
     padding: 30px;
     height: 100%;
-    /* width: 50%; */
     flex: 1;
 }
 
 .aboutSection .right {
     padding: 30px;
-    /* width: 50%;    */
     flex: 2;
-    /* background-color: orange; */
 }
 
 .row {
-    /* background-color: pink; */
     display: block;
     height: 300px;
 }
-
-/* container for the images */
-/* .container .row .col {
-    background-color: red;
-    width: 500px;
-    height: 400px;
-} */
-
-
-/* .aboutSection .right img {
-    width: 100%;
-    height: 100%;
-} */
 
 /* section for app preview images */
 .right .container {
     width: 100%;
     height: 100%;
-    /* background-color: blue; */
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-around;
     align-items: center; /* center the images vertically */
 }
 
 .container .row {
-    /* background-color: red; */
     height: auto;
 }
 
 .right img {
-    /* display: none; */
     width: auto;
     max-height: 384px;
 }
-
-/* .right .container .row .col {
-    position:absolute;
-    width: 25%;
-    height: 100%;
-    background-image: url(your-image-url.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 10px;
-} */
 
 .download {
     font-weight: bold;
@@ -285,29 +206,13 @@ header img {
 
 @media screen and (max-width:940px) {
 
-    /* Default Bootstrap styles for .container where SCREENSHOTS are */
-/* .aboutSection .right .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    left: 0;
-    right: 0;
-    position: absolute;
-    display: block;
-} */
-
 .aboutSection {
     display: flex;
     flex-direction: column;
-    /* background-color: red; */
     padding-bottom: 20px;
-    /* height: 700px; */
 }
 
 .aboutSection .left {
-    /* background-color: red; */
     display: block;
     width: 100%;
 }
@@ -318,57 +223,19 @@ header img {
 }
 
 .aboutSection .row {
-    /* background-color: green; */
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
 .aboutSection .right {
-    /* background-color: red; */
     display: flex;
     justify-content:space-evenly;
 }
-
-/* New styles for .container that reset Bootstrap styles */
-  /* .right {
-      width: 100%;
-      background-color: green;
-    } */
-    
-    /* make screenshot area full width */
-    /* .full-width { */
-        /* width: 100vw !important; */
-        /* padding-right: 0 !important; */
-        /* padding-left: 0 !important; */
-        /* if needed only these two below  */
-      /* margin-right: 0 !important; */
-      /* margin-left: 0 !important; */
-    /* } */
-
-
-    /* .aboutSection .right {
-        width: 100%;
-        background-color: purple;
-        display: flex;
-        justify-content: space-around;
-    } */
-
-    /* .row {
-        display: flex;
-        justify-content: space-around;
-        background-color: pink;
-        width: 100vw;
-    } */
 }
 
 /* about section screen 767 */
 @media screen and (max-width: 767px) {
-    /* .aboutSection .right {
-        display: none;
-        background-color: red;   
-    } */
-
     .aboutSection .right .row {
         /* background-color: purple; */
         width: 2000px; 
@@ -382,7 +249,6 @@ header img {
     }
 }
 
-
 @media screen and (max-width:400px) {
     .right img {
         width: 30%;
@@ -393,48 +259,8 @@ header img {
     }
 }
 
-/* .imagesSection {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-} */
-
-/* .imagesSection img {
-    width: 30%;
-} */
 
 /* end of about section */
-
-/* ///////////////////////////////////////////////////////////////////////////////// */
-
-/* main section */
-/* main {
-    width: 80%;
-    margin: auto;
-    background-color: yellow;
-    display: block;
-} */
-
-/* @media screen and (max-width:768px){
-    .imagesSection {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin-top: 20px;
-    }
-
-    .imagesSection img {
-        width: 100%;
-        max-width: 500px;
-        height: 100%;
-        padding: 10px;
-        margin: auto;
-        
-    }
-} */
-
 
 /* article section */
 article {
@@ -445,19 +271,15 @@ article {
 }
 
 /* About */
-
 .temporary {
     width: 100%;
     height: 100px;
-    /* background-color: rgba(255, 0, 0, 0.278); */
     display: block;
     height: 100%;
-     /* z-index: 4;   */
 }
 
 
 .temporary .left {
-    /* background-color: green; */
     margin: 10px;
     display: flex;
     justify-content: space-around;
@@ -468,15 +290,12 @@ article {
 }
 
 .temporary .right {
-    /* background-color: pink; */
-    /* padding: 20px; */
     margin: 10px;
 }
 
 .temporary img {
     width: 100%;
     max-width: 500px;
-    
 }
 
 .temporary h2 {
@@ -484,26 +303,10 @@ article {
 }
 
 .temporary #makeMoney .right {
-    /* display: none; */
     height: 100%;
     width: 100%;
-    /* background-color: red; */
 }
 
-/* .temporary #makeMoney .left {
-    background-image: url("./images/cash.jpg");
-    background-size: cover;
-    background-position: center;
-} */
-
-.temporary {
-
-}
-
-/* .temporary #miscelaneas .left{
-    background-image: url("./images/sections/miscelaneas.jpg");
-    background-size: cover;
-} */
 
 @media screen and (max-width: 1300px) {
     .temporary .text  {
@@ -516,14 +319,9 @@ article {
     }
 }
 
-/* ////////////////////////////////////////// */
-
-
 article .left {
     color: white;
     width: 50%;
-    /* background-color: #027dbf30; */
-    /* background-color: black; */
     border-radius: 10px;
 }
 
@@ -535,14 +333,10 @@ article .right h2 {
     margin-left: 20px;
 }
 
-article img {
-}
-
 .black {
     background-color: black;
     color: white;
     font-size: 20px;
-    /* padding: 30px; */
     height: 100%;
     border-radius: 10px;
     width: 100%;
@@ -559,9 +353,7 @@ article img {
 
 .red {
     background-color: rgba(255, 0, 0, 0.378);
-    /* color: white; */
     font-size: 20px;
-    /* padding: 30px; */
     height: 100%;
     border-radius: 10px;
     width: 100%;
@@ -577,7 +369,6 @@ article img {
 
     article  {
         display: block;
-        /* background-color: red; */
     }
 
 
@@ -585,17 +376,9 @@ article img {
         display: block;
     }
 
-/* 
-    O PROBLEMA E QUE NO PRIMEIRO ARTICLE ESTOU USANDO UMA IMAGEM, MAS NAS
-    OUTRAS ESTOU USANDO UMA DIV E IMPLEMENTANDO O BACKGROUNDIMAGE POR CSS.
-    SOLUCAO: DEIXAR AS 3 IMAGESN SENDO DISPLAYED DE FORMA PADRAO PARA CSS
-    PADRAO.
- */
-
     article .left {
         width: 90%;
         margin: auto;
-        /* background-color: blue; */
         display: block;
         width: 100%;
     }
@@ -616,7 +399,6 @@ article img {
     }
 
     .temporary .left {
-        /* display: block; */
         width: 100%;
     }
 
@@ -626,12 +408,11 @@ article img {
     }
 }
 
-/* ///////////////////////////////////////////////////////////////////////////////// */
+/* download section */
 
 .downloadSection {
     width: 90%;
     margin: auto;
-    /* background-color: red; */
     padding: 50px;
 }
 
@@ -642,14 +423,11 @@ article img {
 .downloadSection .content {
     display: flex;
     justify-content: space-evenly;
-    /* background-color: red; */
     width: auto;
     margin: auto;
-    /* width: 70%; */
 }
 
 .downloadSection div {
-    /* background-color: green; */
     width: 40%;
     text-align: center;
 }
@@ -660,24 +438,14 @@ article img {
 }
 
 
-/* ///////////////////////////////////////////////////////////////////////////////// */
-
-
-
 /* contactForm section */
 .contactForm {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* background-color: red; */
-    /* height: 500px; */
-    /* left: 0; */
-
 }
 
 .contactForm .container .row {
-    /* background-color: rgba(255, 0, 0, 0.25); */
-    /* color: white; */
     margin-left: none;
     display: block;
     margin: 0;
@@ -687,7 +455,7 @@ article img {
 }
 
 /* end of contact form */
-/* ///////////////////////////////////////////////////////////////////////////////// */
+/* footer */
 
 footer {
     margin-top: 20px;
@@ -699,14 +467,6 @@ footer {
 footer .footerContent {
     width: 100%;
     height: 300px;
-    /* background-color: #002e47; */
-    /* background-color: black; */
-    /* background-image: linear-gradient(to bottom, rgb(255, 0, 0), rgb(0, 0, 0)); */
-    /* background-color: black; */
-    /* background-image: url("./images/footer2.jpg");
-    background-size: cover;
-    background-position: center; */
-    /* color: white; */
     display: flex;
     justify-content: space-around;
 }
@@ -847,11 +607,6 @@ footer p a{
     }
 }
 
-
-
-
-
-
 /* carrers.html */
 .hero2 {
     background-image: url(./images/career.jpeg);
@@ -864,13 +619,11 @@ footer p a{
 }
 
 .article2 {
-    /* font-family: 'Courier New', Courier, monospace; */
     font-size: 20px;
     margin: auto;
     margin-top: 20px;
     width: 90%;
     height: auto;
-    /* background-color:#027dbf4d; */
     padding: 50px;
     border-radius: 20px;
     margin-bottom: 100px;
@@ -879,7 +632,6 @@ footer p a{
 @media screen and (max-width: 768px) {
 
     .main2 {
-        /* background-color: red; */
         margin: 0;
         padding: 0;
     }
