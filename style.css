@@ -1,14 +1,27 @@
+body {
+    /* background-color: rgba(255, 0, 0, 0.112); */
+}
+
 .navbar {
-    background-color: #027DBF;
+    /* background-color: #027DBF; */
+    background-color: rgb(255, 0, 0);
     color: white;
 }
 
-a {
+/* a {
+    color: white;
+} */
+
+.navbar-light .navbar-nav {
     color: white;
 }
 
-a:hover {
-    color: yellow;
+footer a {
+    color: black;
+}
+
+footer a:hover {
+    color: red;
 }
 
 .navbar a {
@@ -25,6 +38,8 @@ header img {
 .nav img {
     display: none;
 }
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
 
 /* slide portion */
 .slider {
@@ -61,6 +76,21 @@ header img {
     opacity: 0.6;
   }
 
+  .description {
+    display: flex;
+    background-color: red;
+  }
+
+  .description .left {
+    background-color: yellow;
+  }
+
+  .description .right {
+    background-color: green;
+    
+  }
+  
+
   /* .slide img {
     width: 100%;
     height: 100%;
@@ -75,7 +105,7 @@ header img {
 }
 
 .marketPlace {
-    background-image: url("./images/cash.avif");
+    background-image: url("./images/cash.jpg");
 }
 
 .tutoring {
@@ -106,7 +136,8 @@ header img {
   .slide h1 {
     padding: 20px;
     border-radius: 10px;
-    background-color:#027DBF;
+    /* background-color:#027DBF; */
+    background-color: black;
   }
 
   .slide h1:hover {
@@ -121,21 +152,11 @@ header img {
     opacity: 1;
   }
 
-  /* end of slide portion */
-
-
-.title {
-    margin-top: 20px;
-    width: 100%;
-    height: 70px;
-    background-color: black;
-    color: yellow;
-    font-size: 40px;
+  .hero h1 {
+    color: white;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
+
 
 /* mobile responsiveness */
 @media screen and (max-width: 480px) {
@@ -153,30 +174,8 @@ header img {
     }
 }
 
-.hero2 {
-    background-image: url(./images/career.jpeg);
-    background-size: cover;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.6;
-}
 
-.article2 {
-    /* font-family: 'Courier New', Courier, monospace; */
-    font-size: 20px;
-    margin: auto;
-    margin-top: 20px;
-    width: 90%;
-    height: auto;
-    /* background-color:#027dbf4d; */
-    padding: 50px;
-    border-radius: 20px;
-    margin-bottom: 100px;
-}
-
-/* dots */
+/* dots NOT IMPLEMENTED USED YET*/
 .dot {
     width: 10px;
     height: 10px;
@@ -192,52 +191,40 @@ header img {
   }
   
 
-@media screen and (max-width: 768px) {
 
-    .main2 {
-        /* background-color: red; */
-        margin: 0;
-        padding: 0;
-    }
+  /* end of slide portion */
+/* ///////////////////////////////////////////////////////////////////////////////// */
 
-    .article2 {
-        width: 95%;
-        padding: 5px;
-        text-align: justify;
-    }
-}
 
-.hero h1 {
-    color: white;
-    text-align: center;
-}
-
+/* ///////////////////////////////////////////////////////////////////////////////// */
 /* about section */
 
 .aboutSection {
     /* margin-top: 20px; */
-    color: white;
+    /* color: white; */
     display: flex;
-    background-color: #027DBF;
+    /* background-color: #027DBF; */
+    /* background-color: black; */
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    width: 99%;
+    margin: auto;
+    margin-top: 20px;
 }
 
 .aboutSection .left {
     padding: 30px;
     height: 100%;
-    width: 50%;
+    /* width: 50%; */
+    flex: 1;
 }
 
 .aboutSection .right {
-    /* padding: 50px; */
-    width: 60%;   
+    padding: 30px;
+    /* width: 50%;    */
+    flex: 2;
     /* background-color: orange; */
-}
-
-.aboutSection .right .container {
-    /* background-color: blue; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
 .row {
@@ -246,141 +233,143 @@ header img {
     height: 300px;
 }
 
-.aboutSection .right img {
+/* container for the images */
+/* .container .row .col {
+    background-color: red;
+    width: 500px;
+    height: 400px;
+} */
+
+
+/* .aboutSection .right img {
     width: 100%;
-}
-
-#image1 {
-    background-color: purple; 
-    margin-left: 10%; 
-    margin-top: 20px;
-}
-
-#image2 {
-    background-color: green;
-    margin-left: 19.5%; 
-    margin-top: 30px;
-}
-
-#image3 {
-    background-color: yellow; 
-    margin-left: 28%; 
-    margin-top: 40px;
-}
-
-
-
-@media screen and (max-width:768px) {
-
-    .aboutSection {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .aboutSection .left {
-        /* background-color: red; */
-        width: 100%;
-    }
-
-    .aboutSection .right {
-        width: 100%;
-        /* background-color: purple; */
-    }
-
-    .aboutSection .right .container {
-        width: 100%;
-        /* background-color: white; */
-        /* background-color: red; */
-        /* width: 100%; */
-        /* display: block; */
-        /* margin: 0; */
-    }
-
-    /* .aboutSection .right .container {
-        display: block;
-    } */
-
-
-    /* .right {
-        display: block;
-        background-color: green;
-    } */
-
-    /* .aboutSection {
-        display: block;
-        flex-direction: column;
-    } */
-
-    /* .aboutSection .left {
-        margin: auto;
-        width: 90%;
-    } */
-
-
-    .aboutSection .right {
-        margin: auto;
-        width: 100%;
-        margin-bottom: 25px;
-    }
-
-    /* .aboutSection .right img {
-        width: 100%;
-        margin-top: 20px;
-    } */
-
-    /* .aboutSection .right .row {
-        background-color: pink;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        display: block;
-        left: 0;
-        margin-left: 0;
-    }  */
-
-    .row {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    #image1 {
-        background-color: purple; 
-        margin-left: 0; 
-        margin-top: 10px;
-    }
-    
-    #image2 {
-        background-color: green;
-        margin-left: 0; 
-        margin-top: 10px;
-    }
-    
-    #image3 {
-        background-color: yellow; 
-        margin-left: 0; 
-        margin-top: 10px;
-    }
-}
+    height: 100%;
+} */
 
 /* section for app preview images */
 .right .container {
     width: 100%;
-    height: 90%;
+    height: 100%;
     /* background-color: blue; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center; /* center the images vertically */
 }
 
-.right .container .row .col {
+.container .row {
+    /* background-color: red; */
+    height: auto;
+}
+
+.right img {
+    /* display: none; */
+    width: auto;
+    max-height: 384px;
+}
+
+/* .right .container .row .col {
     position:absolute;
-    width: 200px;
-    height: 250px;
-    background-color: red;
+    width: 25%;
+    height: 100%;
+    background-image: url(your-image-url.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 10px;
-}
-
-/* @media screen and {max-width: ;
-    
 } */
 
+.download {
+    font-weight: bold;
+}
+
+@media screen and (max-width:940px) {
+
+    /* Default Bootstrap styles for .container where SCREENSHOTS are */
+/* .aboutSection .right .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: block;
+} */
+
+.aboutSection {
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    padding-bottom: 20px;
+    /* height: 700px; */
+}
+
+.aboutSection .left {
+    /* background-color: red; */
+    display: block;
+    width: 100%;
+}
+
+.aboutSection .right {
+    padding: 0;
+    width: 100%;
+}
+
+.aboutSection .row {
+    /* background-color: green; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutSection .right {
+    /* background-color: red; */
+    display: flex;
+    justify-content:space-evenly;
+}
+
+/* New styles for .container that reset Bootstrap styles */
+  /* .right {
+      width: 100%;
+      background-color: green;
+    } */
+    
+    /* make screenshot area full width */
+    /* .full-width { */
+        /* width: 100vw !important; */
+        /* padding-right: 0 !important; */
+        /* padding-left: 0 !important; */
+        /* if needed only these two below  */
+      /* margin-right: 0 !important; */
+      /* margin-left: 0 !important; */
+    /* } */
+
+
+    /* .aboutSection .right {
+        width: 100%;
+        background-color: purple;
+        display: flex;
+        justify-content: space-around;
+    } */
+
+    /* .row {
+        display: flex;
+        justify-content: space-around;
+        background-color: pink;
+        width: 100vw;
+    } */
+}
+
+@media screen and (max-width:400px) {
+    .right img {
+        width: 30%;
+    }
+
+    .contactSection {
+        background-color: red;
+    }
+}
 
 .imagesSection {
     width: 100%;
@@ -393,9 +382,17 @@ header img {
     width: 30%;
 }
 
-main {
-    width: 100%;
-}
+/* end of about section */
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+
+/* main section */
+/* main {
+    width: 80%;
+    margin: auto;
+    background-color: yellow;
+    display: block;
+} */
 
 @media screen and (max-width:768px){
     .imagesSection {
@@ -425,13 +422,76 @@ article {
     display: flex;
 }
 
+/* About */
+
+.temporary {
+    width: 100%;
+    height: 100px;
+    /* background-color: rgba(255, 0, 0, 0.278); */
+    display: block;
+    height: 100%;
+     /* z-index: 4;   */
+}
+
+
+.temporary .left {
+    /* background-color: green; */
+    margin: 10px;
+}
+
+.temporary .right {
+    /* background-color: pink; */
+    /* padding: 20px; */
+    margin: 10px;
+}
+
+.temporary img {
+    width: 100%;
+}
+
+.temporary h2 {
+    margin-bottom: 20px;
+}
+
+.temporary #makeMoney .right {
+    /* display: none; */
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.temporary #makeMoney .left {
+    background-image: url("./images/cash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.temporary #miscelaneas .left{
+    background-image: url("./images/sections/miscelaneas.jpg");
+    background-size: cover;
+}
+
+@media screen and (max-width: 1300px) {
+    .temporary .text  {
+        display: block;
+        width: 80%;
+    }
+
+    .temporary .left .text{
+        background-color: red;
+    }
+}
+
+/* ////////////////////////////////////////// */
+
+
+
 
 article .left {
-    padding: 20px;
-    font-size: 30px;
-    color: black;
+    color: white;
     width: 50%;
-    background-color: #027dbf30;
+    /* background-color: #027dbf30; */
+    /* background-color: black; */
     border-radius: 10px;
 }
 
@@ -441,6 +501,43 @@ article .right {
 
 article .right h2 {
     margin-left: 20px;
+}
+
+article img {
+}
+
+.black {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    /* padding: 30px; */
+    height: 100%;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.black li {
+    font-size: 20px;
+}
+
+.red {
+    background-color: rgba(255, 0, 0, 0.378);
+    /* color: white; */
+    font-size: 20px;
+    /* padding: 30px; */
+    height: 100%;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 @media screen and (max-width: 768px) {
     article {
@@ -468,22 +565,50 @@ article .right h2 {
     }
 }
 
-/* contact section */
+/* ///////////////////////////////////////////////////////////////////////////////// */
+/* contactForm section */
 .contactForm {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     /* background-color: red; */
-    height: 500px;
+    /* height: 500px; */
+    /* left: 0; */
+
 }
+
+.contactForm .container .row {
+    /* background-color: rgba(255, 0, 0, 0.25); */
+    /* color: white; */
+    margin-left: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* end of contact form */
+/* ///////////////////////////////////////////////////////////////////////////////// */
 
 footer {
     margin-top: 20px;
+    background-image: url("./images/footer2.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 footer .footerContent {
     width: 100%;
-    height: auto;
-    background-color: #002e47;
-    color: white;
+    height: 300px;
+    /* background-color: #002e47; */
+    /* background-color: black; */
+    /* background-image: linear-gradient(to bottom, rgb(255, 0, 0), rgb(0, 0, 0)); */
+    /* background-color: black; */
+    /* background-image: url("./images/footer2.jpg");
+    background-size: cover;
+    background-position: center; */
+    /* color: white; */
     display: flex;
     justify-content: space-around;
 }
@@ -546,6 +671,15 @@ footer i {
     margin: 20px;
 }
 
+footer p {
+    color: white;
+    margin: 0;
+}
+
+footer p a{
+    color: white;
+}
+
 .hide {
     display: none;
 }
@@ -553,8 +687,10 @@ footer i {
 .disclaimer {
     width: 100%;
     margin-top: auto;
-    background-color: #002e47;
-    color:#195c7f;
+    /* background-color: #002e47; */
+    background-color: black;
+    /* color:#195c7f; */
+    color: white;
     box-sizing: border-box;
     margin: 0;
     padding-bottom: 20px;
@@ -612,3 +748,49 @@ footer i {
         margin: 0;
     }
 }
+
+
+
+
+
+
+/* carrers.html */
+.hero2 {
+    background-image: url(./images/career.jpeg);
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+}
+
+.article2 {
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 20px;
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+    height: auto;
+    /* background-color:#027dbf4d; */
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .main2 {
+        /* background-color: red; */
+        margin: 0;
+        padding: 0;
+    }
+
+    .article2 {
+        width: 95%;
+        padding: 5px;
+        text-align: justify;
+    }
+}
+
+/* END OF CAREERS.HTML */
