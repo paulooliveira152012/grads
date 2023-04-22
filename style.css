@@ -363,10 +363,10 @@ header img {
 
 /* about section screen 767 */
 @media screen and (max-width: 767px) {
-    .aboutSection .right {
-        /* display: none */
+    /* .aboutSection .right {
+        display: none;
         background-color: red;   
-    }
+    } */
 
     .aboutSection .right .row {
         background-color: purple;
@@ -456,8 +456,12 @@ article {
 
 
 .temporary .left {
-    /* background-color: green; */
+    background-color: green;
     margin: 10px;
+}
+
+.temporary .left img {
+    height: 100%;
 }
 
 .temporary .right {
