@@ -653,8 +653,9 @@ article {
 
 .temporary img {
     width: 100%;
+    height: 100%; /* Set the height to 100% to fit the entire parent container */
     max-width: 500px;
-    
+    object-fit: cover;
 }
 
 .temporary h2 {
