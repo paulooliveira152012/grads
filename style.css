@@ -619,7 +619,12 @@ article {
     margin: auto;
     padding: 20px;
     display: flex;
+    /* background-color: red; */
 }
+
+/* article .left {
+    display: none;
+} */
 
 /* About */
 
@@ -633,16 +638,22 @@ article {
 }
 
 
-.temporary .left {
-    /* background-color: green; */
+/* .temporary .left {
+    background-color: green;
     margin: 10px;
     display: flex;
     justify-content: space-around;
+} */
+
+article .left {
+    background-color: green;
+    width: 100px;
+    height: 100%;
+    text-align: center;
 }
 
 .temporary .left img {
     height: 100%;
-    
 }
 
 .temporary .right {
@@ -654,7 +665,9 @@ article {
 .temporary img {
     width: 100%;
     max-width: 500px;
-    
+    height: auto; /* Ensures the image maintains its aspect ratio */
+    object-fit: contain; /* Scales the image while preserving aspect ratio and centers it within the container */
+    object-position: center; /* Centers the image horizontally and vertically within the container */
 }
 
 .temporary h2 {
@@ -700,6 +713,8 @@ article .left {
     /* background-color: #027dbf30; */
     /* background-color: black; */
     border-radius: 10px;
+    height: 100%;
+    /* background-color: green; */
 }
 
 article .right {
@@ -749,11 +764,11 @@ article img {
 }
 
 
-#miscelaneas .left {
+/* #miscelaneas .left {
     background-image: url("./images/sections/couch1.jpg");
     background-size: cover;
     background-position: center;
-}
+} */
 
 
 @media screen and (max-width: 768px) {
@@ -761,11 +776,6 @@ article img {
     article  {
         display: block;
         /* background-color: red; */
-    }
-
-
-    article .left {
-        display: block;
     }
 
 
