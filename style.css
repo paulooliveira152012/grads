@@ -642,6 +642,7 @@ article {
 
 .temporary .left img {
     height: 100%;
+    
 }
 
 .temporary .right {
@@ -673,9 +674,6 @@ article {
     background-position: center;
 } */
 
-.temporary {
-
-}
 
 /* .temporary #miscelaneas .left{
     background-image: url("./images/sections/miscelaneas.jpg");
@@ -749,6 +747,15 @@ article img {
     flex-direction: column;
     justify-content: center;
 }
+
+
+#miscelaneas .left {
+    background-image: url("./images/sections/couch1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
 @media screen and (max-width: 768px) {
 
     article  {
@@ -760,6 +767,7 @@ article img {
     article .left {
         display: block;
     }
+
 
 /* 
     O PROBLEMA E QUE NO PRIMEIRO ARTICLE ESTOU USANDO UMA IMAGEM, MAS NAS
