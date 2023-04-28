@@ -1074,6 +1074,12 @@ footer p a{
     margin-bottom: 100px;
 }
 
+.logoSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (max-width: 768px) {
 
     .main2 {
