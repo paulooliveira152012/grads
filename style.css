@@ -837,24 +837,36 @@ article img {
 
 .downloadSection .content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-between;
     /* background-color: red; */
     width: auto;
     margin: auto;
-    /* width: 70%; */
+    width: 75%;
+    max-width: 500px;
 }
 
-.downloadSection div {
-    /* background-color: green; */
-    display: flex;
-    width: 70%;
-    text-align: center;
+.downloadSection .content div {
+    width: 50%;
+    max-width: 200px;
 }
 
 .downloadSection img {
-    width: 70%;
+    width: 100%;
+    /* padding: 20px; */
     border-radius: 10px;
-    margin: 10px;
+    /* margin: 10px; */
+}
+
+@media screen and (max-width: 740px) {
+
+    .downloadSection .content div {
+        text-align: center;
+    }
+
+    .downloadSection img {
+        width: 80%;
+        margin: auto;
+    }
 }
 
 
