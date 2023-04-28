@@ -665,9 +665,7 @@ article .left {
 .temporary img {
     width: 100%;
     max-width: 500px;
-    height: auto; /* Ensures the image maintains its aspect ratio */
-    object-fit: contain; /* Scales the image while preserving aspect ratio and centers it within the container */
-    object-position: center; /* Centers the image horizontally and vertically within the container */
+    object-fit: cover;
 }
 
 .temporary h2 {
