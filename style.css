@@ -646,7 +646,7 @@ article {
 } */
 
 article .left {
-    background-color: green;
+    /* background-color: green; */
     width: 100px;
     height: 100%;
     text-align: center;
