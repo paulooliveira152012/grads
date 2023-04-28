@@ -32,7 +32,7 @@ footer a:hover {
     background-color: white;
 }
 header img {
-    width: 50px;
+    width: 70px;
 }
 
 .nav img {
@@ -112,8 +112,8 @@ header img {
     background-image: url("./images/tutoring.jpg");
 }
 
-.rating {
-    background-image: url("./images/rating.jpg");
+.couchsurfing {
+    background-image: url("./images/couchsurfing.jpg");
 }
 
 .rideShare {
@@ -134,10 +134,11 @@ header img {
   }
 
   .slide h1 {
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     /* background-color:#027DBF; */
     background-color: black;
+    font-size: 2em;
   }
 
   .slide h1:hover {
