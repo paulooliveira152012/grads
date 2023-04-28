@@ -829,6 +829,15 @@ article img {
     }
 }
 
+.logoSection {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 100%;
+}
+
 /* ///////////////////////////////////////////////////////////////////////////////// */
 
 .downloadSection {
@@ -862,6 +871,7 @@ article img {
     width: 70%;
     border-radius: 10px;
     margin: 10px;
+    margin-top: 30px;
 }
 
 
