@@ -619,12 +619,7 @@ article {
     margin: auto;
     padding: 20px;
     display: flex;
-    /* background-color: red; */
 }
-
-/* article .left {
-    display: none;
-} */
 
 /* About */
 
@@ -638,18 +633,11 @@ article {
 }
 
 
-/* .temporary .left {
-    background-color: green;
+.temporary .left {
+    /* background-color: green; */
     margin: 10px;
     display: flex;
     justify-content: space-around;
-} */
-
-article .left {
-    /* background-color: green; */
-    width: 100px;
-    height: 100%;
-    text-align: center;
 }
 
 .temporary .left img {
@@ -664,6 +652,7 @@ article .left {
 
 .temporary img {
     width: 100%;
+    height: 100%; /* Set the height to 100% to fit the entire parent container */
     max-width: 500px;
     object-fit: cover;
 }
@@ -685,6 +674,9 @@ article .left {
     background-position: center;
 } */
 
+.temporary {
+
+}
 
 /* .temporary #miscelaneas .left{
     background-image: url("./images/sections/miscelaneas.jpg");
@@ -711,8 +703,6 @@ article .left {
     /* background-color: #027dbf30; */
     /* background-color: black; */
     border-radius: 10px;
-    height: 100%;
-    /* background-color: green; */
 }
 
 article .right {
@@ -760,15 +750,6 @@ article img {
     flex-direction: column;
     justify-content: center;
 }
-
-
-/* #miscelaneas .left {
-    background-image: url("./images/sections/couch1.jpg");
-    background-size: cover;
-    background-position: center;
-} */
-
-
 @media screen and (max-width: 768px) {
 
     article  {
@@ -776,6 +757,10 @@ article img {
         /* background-color: red; */
     }
 
+
+    article .left {
+        display: block;
+    }
 
 /* 
     O PROBLEMA E QUE NO PRIMEIRO ARTICLE ESTOU USANDO UMA IMAGEM, MAS NAS
@@ -837,15 +822,6 @@ article img {
     }
 }
 
-.logoSection {
-    display: flex;
-    justify-content: center;
-}
-
-.logo {
-    width: 100%;
-}
-
 /* ///////////////////////////////////////////////////////////////////////////////// */
 
 .downloadSection {
@@ -879,7 +855,6 @@ article img {
     width: 70%;
     border-radius: 10px;
     margin: 10px;
-    margin-top: 30px;
 }
 
 
