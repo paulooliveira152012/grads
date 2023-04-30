@@ -1,5 +1,8 @@
 body {
     background-color: #E3E4E6;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .navbar {
@@ -718,6 +721,19 @@ footer p a{
     footer .google {
         margin: 0;
     }
+
+    .images {
+        /* display: block; */
+        /* flex-direction: column; */
+        /* width: 100%; */
+        /* background-color: red; */
+    }
+
+    .images img {
+        /* display: block; */
+        /* width: 65%; */
+        margin: 20px;    
+    }
 }
 
 /* carrers.html */
@@ -729,6 +745,16 @@ footer p a{
     align-items: center;
     justify-content: center;
     opacity: 0.6;
+}
+
+.images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.images img {
+    width: 45%;
+    height: 200px;
 }
 
 .article2 {
@@ -763,3 +789,14 @@ footer p a{
 }
 
 /* END OF CAREERS.HTML */
+
+.internshipImgContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.internshipImg{
+    width: 500px;
+}
