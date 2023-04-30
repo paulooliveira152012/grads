@@ -150,60 +150,76 @@ header img {
     }
 
     .slider h1 {
+        position: absolute;
         font-size: 20px;
         bottom: 0;
         width: 100%;
         text-align: center;
         border-radius: 0;
         background-color: black;
+        margin-bottom: 0;
     }
 
+    /* .temporary .images {
+        flex-direction: column;
+        position: relative;
+    } */
+
+    .temporary .images img {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 50%;
+        margin: 10px;
+    }
+
+ 
     /* containers section */
-    .temporary article .right {
+    /* .temporary article .right {
         margin: 0;
         padding: 0;
-    }
+    } */
 
-    .temporary article {
+    /* .temporary article {
         display: flex;
-    }
+    } */
 
-    .temporary article .left {
+    /* .temporary article .left {
         background-color: red;
         display: none;
-    }
+    } */
 
-    .temporary article .right h2 {
+    /* .temporary article .right h2 {
         font-size: 16px;
-    }
+    } */
 
-    .temporary article .right li {
+    /* .temporary article .right li {
         font-size: 14px;
-    }
+    } */
 
-    .temporary #studyGroupsSection img {
+    /* .temporary #studyGroupsSection img {
         display: none;
-    }
+    } */
 
-    .temporary #studyGroupsSection {
+    /* .temporary #studyGroupsSection {
         padding-bottom: 0;
-    }
+    } */
 
-    .temporary #makeMoney {
+    /* .temporary #makeMoney {
         padding-bottom: 0;
-    }
+    } */
 
-    .temporary #makeMoney .red {
+    /* .temporary #makeMoney .red {
         margin-top: 10px;
-    }
+    } */
 
-    .temporary #miscelaneas {
+    /* .temporary #miscelaneas {
         padding-bottom: 0;
-    }
+    } */
 
     .downloadSection div {
         flex-direction: column;
         margin: auto;
+        margin-bottom: 15px;
         width: 100%;
     }
 
