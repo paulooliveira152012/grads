@@ -172,24 +172,49 @@ header img {
         margin: 10px;
     }
 
-
-
-    #studyGroupsSection {
-        background-color: red;
+ 
+    /* containers section */
+    /* .temporary article .right {
         margin: 0;
         padding: 0;
-    }
+    } */
 
-    .studyGroupSection .left {
-        background-color: green;
-    }
+    /* .temporary article {
+        display: flex;
+    } */
 
-    .temporary .right {
-        background-color: blue;
-        margin: 0;
-    }
+    /* .temporary article .left {
+        background-color: red;
+        display: none;
+    } */
 
-    
+    /* .temporary article .right h2 {
+        font-size: 16px;
+    } */
+
+    /* .temporary article .right li {
+        font-size: 14px;
+    } */
+
+    /* .temporary #studyGroupsSection img {
+        display: none;
+    } */
+
+    /* .temporary #studyGroupsSection {
+        padding-bottom: 0;
+    } */
+
+    /* .temporary #makeMoney {
+        padding-bottom: 0;
+    } */
+
+    /* .temporary #makeMoney .red {
+        margin-top: 10px;
+    } */
+
+    /* .temporary #miscelaneas {
+        padding-bottom: 0;
+    } */
 
     .downloadSection div {
         flex-direction: column;
@@ -485,10 +510,19 @@ article img {
     .temporary .right {
         display: block;
         width: 100%;
+        background-color: red;
+        margin: 0;
+        padding: 0;
+    }
+
+    .temporary .right .black {
+        border-radius: 0px;
+        width: 100%;
     }
 
     .temporary #studyGroupsSection {
         padding-bottom: 0;
+        padding: 0;
     }
 
     .temporary #makeMoney {
