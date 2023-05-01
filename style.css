@@ -172,49 +172,24 @@ header img {
         margin: 10px;
     }
 
- 
-    /* containers section */
-    /* .temporary article .right {
+
+
+    #studyGroupsSection {
+        background-color: red;
         margin: 0;
         padding: 0;
-    } */
+    }
 
-    /* .temporary article {
-        display: flex;
-    } */
+    .studyGroupSection .left {
+        background-color: green;
+    }
 
-    /* .temporary article .left {
-        background-color: red;
-        display: none;
-    } */
+    .temporary .right {
+        background-color: blue;
+        margin: 0;
+    }
 
-    /* .temporary article .right h2 {
-        font-size: 16px;
-    } */
-
-    /* .temporary article .right li {
-        font-size: 14px;
-    } */
-
-    /* .temporary #studyGroupsSection img {
-        display: none;
-    } */
-
-    /* .temporary #studyGroupsSection {
-        padding-bottom: 0;
-    } */
-
-    /* .temporary #makeMoney {
-        padding-bottom: 0;
-    } */
-
-    /* .temporary #makeMoney .red {
-        margin-top: 10px;
-    } */
-
-    /* .temporary #miscelaneas {
-        padding-bottom: 0;
-    } */
+    
 
     .downloadSection div {
         flex-direction: column;
