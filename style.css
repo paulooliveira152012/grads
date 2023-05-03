@@ -366,10 +366,13 @@ header img {
 
 /* article section */
 article {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin: auto;
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
+    justify-content: space-around;
+    background-color: green;
+    width: 95%;
 }
 
 /* About */
@@ -378,10 +381,10 @@ article {
     height: 100px;
     display: block;
     height: 100%;
+    background-color: red;
 }
 
 .temporary .left {
-    margin: 10px;
     display: flex;
     justify-content: space-around;
 }
@@ -437,13 +440,15 @@ article .right h2 {
     margin-left: 20px;
 }
 
-article img {
+.studyGroupsSection .text {
+    background-color: yellow;
+    /* display: none; */
 }
+
 
 .black {
     background-color: black;
     color: white;
-    font-size: 20px;
     height: 100%;
     border-radius: 10px;
     width: 100%;
@@ -452,6 +457,9 @@ article img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 0;
+    /* position: absolute; */
+    height: 100%;
 }
 
 .black li {
@@ -482,6 +490,7 @@ article img {
     }
 
     article .left {
+        background-color: red;
         width: 90%;
         margin: auto;
         display: block;
@@ -774,7 +783,8 @@ footer p a{
 
 .images {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    background-color: purple;
 }
 
 .images img {
