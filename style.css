@@ -76,15 +76,6 @@ header img {
     background-color: red;
   }
 
-  .description .left {
-    background-color: yellow;
-  }
-
-  .description .right {
-    background-color: green;
-    
-  }
-
 .hero {
     background-image: url("./images/hero.jpg");
 }
@@ -371,7 +362,7 @@ article {
     /* padding: 20px; */
     display: flex;
     justify-content: space-around;
-    background-color: green;
+    /* background-color: green; */
     width: 95%;
 }
 
@@ -381,7 +372,7 @@ article {
     height: 100px;
     display: block;
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .temporary .left {
@@ -490,7 +481,7 @@ article .right h2 {
     }
 
     article .left {
-        background-color: red;
+        /* background-color: red; */
         width: 90%;
         margin: auto;
         display: block;
@@ -512,8 +503,16 @@ article .right h2 {
         display: flex;
     }
 
+    .temporary {
+        margin: none;
+        padding: 0;
+        /* background-color: green; */
+        margin-top: 20px;
+    }
+
     .temporary .left {
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .temporary .right {
@@ -524,14 +523,19 @@ article .right h2 {
         padding: 0;
     }
 
-    .temporary .right .black {
-        border-radius: 0px;
-        width: 100%;
-    }
 
     .temporary #studyGroupsSection {
         padding-bottom: 0;
         padding: 0;
+        width: 100%;
+    }
+
+    .temporary .right .black {
+        display: block;
+        position: relative;
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 20px;
     }
 
     .temporary #makeMoney {
@@ -756,16 +760,9 @@ footer p a{
         margin: 0;
     }
 
-    .images {
-        /* display: block; */
-        /* flex-direction: column; */
-        /* width: 100%; */
-        /* background-color: red; */
-    }
+    
 
     .images img {
-        /* display: block; */
-        /* width: 65%; */
         margin: 20px;    
     }
 }
@@ -784,7 +781,7 @@ footer p a{
 .images {
     display: flex;
     justify-content: space-around;
-    background-color: purple;
+    /* background-color: purple; */
 }
 
 .images img {
