@@ -4,3 +4,8 @@ to display each section of the slide under the slider section.
 381 - red
 373 - green
 780 - purple
+
+red - 322
+yellow - 386
+purple -  736
+

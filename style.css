@@ -151,10 +151,6 @@ header img {
         margin-bottom: 0;
     }
 
-    /* .temporary .images {
-        flex-direction: column;
-        position: relative;
-    } */
 
     .temporary .images img {
         margin: auto;
@@ -162,50 +158,6 @@ header img {
         width: 50%;
         margin: 10px;
     }
-
- 
-    /* containers section */
-    /* .temporary article .right {
-        margin: 0;
-        padding: 0;
-    } */
-
-    /* .temporary article {
-        display: flex;
-    } */
-
-    /* .temporary article .left {
-        background-color: red;
-        display: none;
-    } */
-
-    /* .temporary article .right h2 {
-        font-size: 16px;
-    } */
-
-    /* .temporary article .right li {
-        font-size: 14px;
-    } */
-
-    /* .temporary #studyGroupsSection img {
-        display: none;
-    } */
-
-    /* .temporary #studyGroupsSection {
-        padding-bottom: 0;
-    } */
-
-    /* .temporary #makeMoney {
-        padding-bottom: 0;
-    } */
-
-    /* .temporary #makeMoney .red {
-        margin-top: 10px;
-    } */
-
-    /* .temporary #miscelaneas {
-        padding-bottom: 0;
-    } */
 
     .downloadSection div {
         flex-direction: column;
@@ -366,13 +318,24 @@ article {
     width: 95%;
 }
 
-/* About */
+/* Main */
 .temporary {
     width: 100%;
     height: 100px;
     display: block;
     height: 100%;
     /* background-color: red; */
+}
+
+#studyGroupsSection {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content:space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* background-color: yellow; */
+    /* display: none; */
 }
 
 .temporary .left {
@@ -385,7 +348,7 @@ article {
 }
 
 .temporary .right {
-    margin: 10px;
+    margin-left: 20px;
 }
 
 .temporary img {
@@ -431,10 +394,7 @@ article .right h2 {
     margin-left: 20px;
 }
 
-.studyGroupsSection .text {
-    background-color: yellow;
-    /* display: none; */
-}
+
 
 
 .black {
@@ -780,12 +740,13 @@ footer p a{
 
 .images {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     /* background-color: purple; */
+    margin: 20px;
 }
 
 .images img {
-    width: 45%;
+    width: 50%;
     height: 200px;
 }
 
