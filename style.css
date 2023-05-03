@@ -465,14 +465,22 @@ article .right h2 {
 
     .temporary {
         margin: none;
-        padding: 0;
         /* background-color: green; */
+
         margin-top: 20px;
     }
 
     .temporary .left {
         width: 100%;
+        display: block;
+        display: flex;
+        justify-content: center;
         margin-bottom: 20px;
+    }
+
+    .temporary .left img {
+        height: 100%;
+        margin: auto;
     }
 
     .temporary .right {
@@ -488,6 +496,7 @@ article .right h2 {
         padding-bottom: 0;
         padding: 0;
         width: 100%;
+        flex-direction: column;
     }
 
     .temporary .right .black {
@@ -495,7 +504,6 @@ article .right h2 {
         position: relative;
         width: 100%;
         border-radius: 0;
-        margin-bottom: 20px;
     }
 
     .temporary #makeMoney {
