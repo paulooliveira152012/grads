@@ -821,8 +821,9 @@ footer p a{
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    background-color: red;
 }
 
 .internshipImg{
-    width: 500px;
+    width: 100%;
 }
