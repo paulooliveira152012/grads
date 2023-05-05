@@ -172,6 +172,20 @@ header img {
     }
 }
 
+/* mobile responsiveness */
+@media screen and (max-width: 479px) {
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .temporary .images img {
+        text-align: center;
+        width: 100%;
+    }
+}
+
 /* end of slide portion */
 /* ///////////////////////////////////////////////////////////////////////////////// */
 
