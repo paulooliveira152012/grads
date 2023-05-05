@@ -170,6 +170,11 @@ header img {
         display: flex;
         justify-content: space-around;
     }
+
+    .temporary .images img {
+        /* display: none; */
+        width: 49%;
+    }
 }
 
 /* mobile responsiveness */
@@ -182,7 +187,7 @@ header img {
 
     .temporary .images img {
         text-align: center;
-        width: 100%;
+        /* width: 100%; */
     }
 }
 
@@ -275,6 +280,12 @@ header img {
     .aboutSection .right .row {
         width: 2000px; 
         display: block;
+    }
+
+
+    .temporary .images img {
+        /* display: none; */
+        margin: 0;
     }
 }
 
