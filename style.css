@@ -134,7 +134,7 @@ header img {
 }
 
 /* mobile responsiveness */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
 
     .row {
         /* background-color: red; */
