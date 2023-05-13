@@ -565,6 +565,9 @@ article .right h2 {
         border-bottom-right-radius: 20px;
     }
 
+    .body h2 {
+        margin-top: 30px;
+    }
 
     /* article  {
         display: block;
