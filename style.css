@@ -771,16 +771,21 @@ footer .contact {
     padding: 20px;
 }
 
+footer .download {
+    /* background-color: red; */
+    display: flex;
+}
+
 footer .apple {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     width: 70%;
     height: auto;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 footer .google {
     width: 70%;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 footer img {
