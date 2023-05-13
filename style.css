@@ -688,9 +688,23 @@ article .right h2 {
 
 footer {
     margin-top: 20px;
-    background-image: url("./images/footer2.jpg");
+    /* background-image: url("./images/footer2.jpg"); */
+    background-color: black;
+    color: white;
     background-size: cover;
     background-position: center;
+}
+
+footer a {
+    color: white;
+}
+
+footer i {
+    color: white;
+}
+
+footer i:hover {
+    color: red;
 }
 
 footer .footerContent {
@@ -782,6 +796,14 @@ footer p a{
     padding-top: 100px;
     padding: 10px;
     text-align: justify;
+}
+
+.redStripe {
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0.481), black);
+    position:relative;
+    display: inline-block;
 }
 
 @media screen and (max-width: 768px) {
