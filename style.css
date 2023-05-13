@@ -133,6 +133,20 @@ header img {
     text-align: center;
 }
 
+/* mobile responsiveness */
+@media screen and (max-width: 576px) {
+
+    .row {
+        /* background-color: red; */
+        width: 100%;
+        display: flex;
+        /* justify-content: space-evenly; */
+    }
+
+    .container a {
+     display: none;
+    }
+}
 
 /* mobile responsiveness */
 @media screen and (max-width: 480px) {
