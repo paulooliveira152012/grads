@@ -494,8 +494,8 @@ article .right h2 {
 }
 
 .red {
-    /* background-color: rgba(255, 0, 0, 0.536); */
     background-color: black;
+    /* background-color: white; */
     font-size: 20px;
     height: 100%;
     /* border-radius: 10px; */
@@ -514,8 +514,8 @@ article .right h2 {
 @media screen and (max-width: 768px) {
 
     .body {
-        padding: 0px;
-        margin-top: 0;
+        /* padding: 0px; */
+        /* margin-top: 0; */
     }
 
     .body ul {
@@ -546,6 +546,15 @@ article .right h2 {
         /* transform: scale(0.8); */
     }
 
+    .black {
+        background-color: rgba(0, 0, 0, 0.166);
+        color: black;
+    }
+
+    .red {
+        background-color: rgba(0, 0, 0, 0.166);
+        color: black;
+    }
 
 
     /* article  {
@@ -863,8 +872,6 @@ footer p a{
     footer .google {
         margin: 0;
     }
-
-    
 
     .images img {
         margin: 20px;    
