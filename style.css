@@ -892,13 +892,20 @@ footer p a{
 
 /* carrers.html */
 .hero2 {
-    background-image: url(./images/career.jpeg);
+    background-image: url(./images/interenship.jpg);
     background-size: cover;
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0.6;
+}
+
+.hero2 h2 {
+    color: white;
+    font-size: 7em;
+    /* background-color: white; */
+    position: absolute;
 }
 
 .images {
