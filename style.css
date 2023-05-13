@@ -514,7 +514,16 @@ article .right h2 {
 @media screen and (max-width: 768px) {
 
     .body {
-        padding: 0;
+        padding: 0px;
+        margin-top: 0;
+    }
+
+    .body ul {
+        margin-bottom: 50px;
+    }
+
+    .firstBody {
+        margin-top: 20px;
     }
 
     .body article {
