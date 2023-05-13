@@ -549,11 +549,20 @@ article .right h2 {
     .black {
         background-color: rgba(0, 0, 0, 0.166);
         color: black;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .body img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
 
     .red {
         background-color: rgba(0, 0, 0, 0.166);
         color: black;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 
 
