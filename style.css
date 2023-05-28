@@ -508,9 +508,15 @@ article .right h2 {
     color: white;
 }
 
+
 .red li {
     list-style: none;
 }
+
+.notInverted {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
 
     .body {
@@ -561,6 +567,28 @@ article .right h2 {
     .red {
         background-color: rgba(0, 0, 0, 0.166);
         color: black;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .inverted {
+        display: none;
+    }
+
+    .notInverted {
+        display: block;
+    }
+
+    .inverted .red {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .inverted img {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
     }
@@ -649,6 +677,7 @@ article .right h2 {
     .temporary #makeMoney .right {
         padding-top: 0;
     } */
+
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////// */
