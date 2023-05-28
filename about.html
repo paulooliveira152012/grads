@@ -25,7 +25,7 @@
   <style>
 
     article {
-      padding: 100px;
+      padding: 50px 100px;
     }
 
     footer {
@@ -39,11 +39,41 @@
       margin-bottom: 50px;
     }
 
+    .member {
+      display: flex;
+      margin-bottom: 50px;
+    }
+
+    .member .content {
+      padding: 0 20px;
+    }
+
+    .image {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .member img {
+      width: 150px;
+      /* height: 150px; */
+      /* border-radius: 75px; */
+      border-radius: 20px;
+      background-color: white;
+    }
+
+    .crew p {
+      /* color: red; */
+      font-weight: lighter;
+      font-style: normal;
+    }
+
     @media screen and (max-width: 780px) {
       article {
         padding: 10px;
       }
     }
+
   </style>
       <header>
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -60,10 +90,6 @@
                 </li>
                 
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="index.html#about">About</a>
-                </li>
-                
-                <li class="nav-item">
                     <a class="nav-link text-light" href="carrers.html">Careers</a>
                 </li>
                 
@@ -75,17 +101,47 @@
           </nav>
     </header>
 
-    <article style="display: block;">
+    <article style="display: block; margin-top: 50px; padding-top: 0;">
         <h2>A little bit about our story</h2>
 
-        <p>Welcome to Grads Mobile App! A leading provider of student specific resource solutions for college students. Our company was founded in 2020 with a vision to help students all across. Since then, we have been dedicated to providing our students with the highest quality student-specific resources and exceptional customer service.</p>
+        <p>Welcome to Grads Mobile App! A leading provider of student-specific resource solutions for college students. Our company was founded in 2020 with a vision to help students all across. Since then, we have been dedicated to providing our students with the highest quality student-specific resources and exceptional customer service.</p>
 
-        <p>Our team is made up of experienced professionals who are passionate about what they do. We work tirelessly to ensure that our solutions meet the unique needs of each and every student. Whether you're looking for a student specific resource to get through that busy student life, or need help with a specific problem, we are here to help.</p>
-
-        <p>At Grads, we believe in giving back to the community. That's why we are committed to supporting a variety of charitable cause or organizations such as sponsoring students and supporting them. We also prioritize environmental sustainability in our operations and are always looking for ways to reduce our carbon footprint.</p>
-
+        <p>At Grads, we believe in simplifying and enhancing the lives of students. Our goal is to provide practical and efficient solutions that optimize their academic experiences. We understand the unique needs of students and strive to meet them through our innovative app.</p>
+    
+        <p>In addition to our commitment to students, we are also passionate about giving back to the community. As part of our corporate social responsibility, we support various charitable causes and organizations, including sponsoring students and championing environmental sustainability to reduce our carbon footprint.</p>
+    
         <p>Thank you for considering Grads for your academic and student needs. We are confident that our solutions will exceed your expectations, and we look forward to serving you. If you have any questions or would like to learn more about our company, please don't hesitate to contact us.</p>
     </article>
+    
+    <article class="crew" style="display: block; margin-top: 0;">
+      <h2>Meet our team members</h2>
+
+        <div class="member">
+          <div class="image"><img src="images/crew/nali.jpeg" alt=""></div>
+          <div class="content">
+            <p>Nalindrani Malimage (Nali) - Founder:</p>
+            <p>Nali is the driving force behind Grads Mobile. With a deep passion for simplifying students' lives and enhancing their academic experiences, she founded the company in 2020. Nali oversees and administers all aspects of our app, ensuring its conceptualization, visual aesthetics, and intuitive flow meet the needs of our users.</p>
+          </div>
+        </div>
+    
+        <div class="member">
+          <div class="image"><img src="images/crew/kushaal.png" alt=""></div>
+          <div class="content">
+            <p>Kushaal - Engineer:</p>
+            <p>Kushaal is our talented engineer responsible for driving the development of our app. With his expertise in software engineering, he plays a pivotal role in advancing our production and ensuring a user-friendly experience.</p>
+          </div>
+        </div>
+    
+        <div class="member">
+          <div class="image"><img src="images/crew/paulo.jpeg" alt=""></div>
+          <div class="content">
+            <p>Paulo Oliveira - Intern:</p>
+            <p>Paulo joined our team in April 2023 and has been a valuable asset ever since. His versatility and dedication have allowed him to contribute across various aspects of our business, including website development, app interface design, and managing our vibrant Instagram presence. Paulo will also be contributing to mobile development alongside Kushaal.</p>
+          </div>
+        </div>
+    </article>
+    
+
     <footer>
       <div class="footer">
           <div class="footerContent">

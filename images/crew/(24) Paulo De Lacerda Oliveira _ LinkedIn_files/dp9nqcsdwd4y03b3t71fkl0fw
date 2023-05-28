@@ -1,0 +1,290 @@
+define("@ember/test-waiters/build-waiter",["exports","@babel/runtime/helpers/esm/defineProperty","@ember/debug","@ember/test-waiters/token","@ember/test-waiters/waiter-manager"],(function(e,t,i,n,r){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e._resetWaiterNames=function(){s=new Set}
+e.default=function(e){0
+return new a(e)}
+let s
+class a{constructor(e){this.name=e}beginAsync(){return this}endAsync(){}waitUntil(){return!0}debugInfo(){return[]}reset(){}}}))
+define("@ember/test-waiters/index",["exports","@ember/test-waiters/waiter-manager","@ember/test-waiters/build-waiter","@ember/test-waiters/wait-for-promise","@ember/test-waiters/wait-for"],(function(e,t,i,n,r){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+Object.defineProperty(e,"_reset",{enumerable:!0,get:function(){return t._reset}})
+Object.defineProperty(e,"_resetWaiterNames",{enumerable:!0,get:function(){return i._resetWaiterNames}})
+Object.defineProperty(e,"buildWaiter",{enumerable:!0,get:function(){return i.default}})
+Object.defineProperty(e,"getPendingWaiterState",{enumerable:!0,get:function(){return t.getPendingWaiterState}})
+Object.defineProperty(e,"getWaiters",{enumerable:!0,get:function(){return t.getWaiters}})
+Object.defineProperty(e,"hasPendingWaiters",{enumerable:!0,get:function(){return t.hasPendingWaiters}})
+Object.defineProperty(e,"register",{enumerable:!0,get:function(){return t.register}})
+Object.defineProperty(e,"unregister",{enumerable:!0,get:function(){return t.unregister}})
+Object.defineProperty(e,"waitFor",{enumerable:!0,get:function(){return r.default}})
+Object.defineProperty(e,"waitForPromise",{enumerable:!0,get:function(){return n.default}})}))
+define("@ember/test-waiters/token",["exports"],(function(e){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+e.default=class{}}))
+define("@ember/test-waiters/types/index",["exports"],(function(e){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})}))
+define("@ember/test-waiters/wait-for-promise",["exports","@ember/test-waiters/build-waiter"],(function(e,t){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=function(e,t){let i=e
+0
+return i};(0,t.default)("@ember/test-waiters:promise-waiter")}))
+define("@ember/test-waiters/wait-for",["exports","@ember/test-waiters/wait-for-promise","@ember/test-waiters/build-waiter"],(function(e,t,i){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=function(){for(var e=arguments.length,t=new Array(e),i=0;i<e;i++)t[i]=arguments[i]
+let r=t.length<3
+if(r){let[e,i]=t
+return n(e,i)}{let[,,e,i]=t
+return e}}
+function n(e,t){return e}(0,i.default)("@ember/test-waiters:generator-waiter")}))
+define("@ember/test-waiters/waiter-manager",["exports","ember","@ember/test"],(function(e,t,i){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e._reset=function(){for(let e of s())e.isRegistered=!1
+n.clear()}
+e.getPendingWaiterState=a
+e.getWaiters=s
+e.hasPendingWaiters=o
+e.register=function(e){n.set(e.name,e)}
+e.unregister=function(e){n.delete(e.name)}
+const n=function(){let e="TEST_WAITERS",t="undefined"!=typeof Symbol?Symbol.for(e):e,i=r(),n=i[t]
+void 0===n&&(n=i[t]=new Map)
+return n}()
+function r(){if("undefined"!=typeof globalThis)return globalThis
+if("undefined"!=typeof self)return self
+if("undefined"!=typeof window)return window
+if("undefined"!=typeof global)return global
+throw new Error("unable to locate global object")}t.default.Test&&(0,i.registerWaiter)((()=>!o()))
+function s(){let e=[]
+n.forEach((t=>{e.push(t)}))
+return e}function a(){let e={pending:0,waiters:{}}
+n.forEach((t=>{if(!t.waitUntil()){e.pending++
+let i=t.debugInfo()
+e.waiters[t.name]=i||!0}}))
+return e}function o(){return a().pending>0}}))
+define("@glimmer/component/-private/base-component-manager",["exports","@babel/runtime/helpers/esm/defineProperty","@glimmer/component/-private/component"],(function(e,t,i){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=function(e,i,n){return class{static create(e){return new this(i(e))}constructor(i){(0,t.default)(this,"capabilities",n)
+e(this,i)}createComponent(e,t){0
+return new e(i(this),t.named)}getContext(e){return e}}}}))
+define("@glimmer/component/-private/component",["exports","@babel/runtime/helpers/esm/defineProperty","@glimmer/component/-private/owner","@glimmer/component/-private/destroyables"],(function(e,t,i,n){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=e.ARGS_SET=void 0
+let r
+e.ARGS_SET=r
+0
+e.default=class{constructor(e,n){(0,t.default)(this,"args",void 0)
+0
+this.args=n;(0,i.setOwner)(this,e)}get isDestroying(){return(0,n.isDestroying)(this)}get isDestroyed(){return(0,n.isDestroyed)(this)}willDestroy(){}}}))
+define("@glimmer/component/-private/destroyables",["exports","ember"],(function(e,t){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.isDestroying=e.isDestroyed=void 0
+const i=t.default._isDestroying
+e.isDestroying=i
+const n=t.default._isDestroyed
+e.isDestroyed=n}))
+define("@glimmer/component/-private/ember-component-manager",["exports","ember","@ember/object","@ember/application","@ember/component","@ember/runloop","@glimmer/component/-private/base-component-manager","@glimmer/component/-private/destroyables"],(function(e,t,i,n,r,s,a,o){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+const{setDestroyed:l,setDestroying:c}=o,p=(0,r.capabilities)("3.13",{destructor:!0,asyncLifecycleCallbacks:!1,updateHook:!1}),d=t.default.destroy,u=t.default._registerDestructor
+class g extends((0,a.default)(n.setOwner,n.getOwner,p)){createComponent(e,t){const i=super.createComponent(e,t)
+u(i,(()=>{i.willDestroy()}))
+return i}destroyComponent(e){d(e)}}0
+var h=g
+e.default=h}))
+define("@glimmer/component/-private/owner",["exports","@ember/application"],(function(e,t){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+Object.defineProperty(e,"setOwner",{enumerable:!0,get:function(){return t.setOwner}})}))
+define("@glimmer/component/index",["exports","@ember/component","@glimmer/component/-private/ember-component-manager","@glimmer/component/-private/component"],(function(e,t,i,n){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+let r=n.default
+0;(0,t.setComponentManager)((e=>new i.default(e)),r)
+var s=r
+e.default=s}))
+define("ember-batcher/batcher",["exports","ember-test-waiters"],(function(e,t){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.mutateDOM=function(e){let t=n.beginAsync()
+s.unshift([t,e])
+p()}
+e.readDOM=function(e){let t=i.beginAsync()
+r.unshift([t,e])
+p()}
+e.visibilityChange=void 0
+const i=(0,t.buildWaiter)("ember-batcher: readDOM"),n=(0,t.buildWaiter)("ember-batcher: mutateDOM"),r=[],s=[]
+let a=()=>{}
+e.visibilityChange=a
+let o=!1,l=!1
+const c="object"==typeof window&&"function"==typeof window.requestAnimationFrame?e=>{let t=()=>{if(!l){l=!0
+e()}}
+setTimeout(t,20)
+return requestAnimationFrame(t)}:e=>setTimeout(e)
+0
+function p(){if(!o){o=!0
+c((()=>{let e,t
+for(e=0,t=r.length;e<t;e++){let[e,t]=r.pop()
+t()
+i.endAsync(e)}for(e=0,t=s.length;e<t;e++){let[e,t]=s.pop()
+t()
+n.endAsync(e)}o=!1
+l=!1;(s.length>0||r.length>0)&&p()}))}}}))
+define("ember-batcher/index",["exports","ember-batcher/batcher"],(function(e,t){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+Object.defineProperty(e,"mutateDOM",{enumerable:!0,get:function(){return t.mutateDOM}})
+Object.defineProperty(e,"readDOM",{enumerable:!0,get:function(){return t.readDOM}})}))
+define("ember-test-waiters/index",["exports","@ember/debug","@ember/test-waiters"],(function(e,t,i){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+Object.keys(i).forEach((function(t){"default"!==t&&"__esModule"!==t&&(t in e&&e[t]===i[t]||Object.defineProperty(e,t,{enumerable:!0,get:function(){return i[t]}}))}))}))
+define("msg-facepile-grid/components/facepile-presenter",["exports","@ember/component","@ember/template-factory","@ember/component/template-only"],(function(e,t,i,n){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+const r=(0,i.createTemplateFactory)({id:"Fc9/I6Qg",block:'[[[11,0],[16,0,[29,[[52,[28,[37,1],[[30,1,["isGroupChat"]],[28,[37,2],[[30,1,["participantsToRender","length"]],1],null]],null],[52,[28,[37,3],[[30,1,["participantsToRender","length"]],2],null],"msg-facepile-grid--group-size-2 msg-facepile-grid"],"msg-facepile-grid--no-facepile msg-facepile-grid"],"\\n    msg-facepile-grid--",[30,2]]]],[17,3],[12],[1,"\\n"],[41,[28,[37,4],[[30,1,["isGroupChat"]],[28,[37,5],[[30,1,["participantsToRender","length"]],1],null]],null],[[[1,"    "],[10,0],[14,0,"msg-facepile-grid__img msg-facepile-grid__group-chat-icon"],[12],[1,"\\n      "],[1,[28,[35,6],null,[["type","size","class"],["people",[30,4],"t-black--light"]]]],[1,"\\n    "],[13],[1,"\\n"]],[]],null],[41,[28,[37,7],[[30,1,["participantsSize"]],3],null],[[[1,"    "],[10,0],[14,0,"flex-row justify-center display-flex"],[12],[1,"\\n"],[42,[28,[37,9],[[28,[37,9],[[28,[37,10],[[30,1,["participantsToRender"]],0,2],null]],null]],null],null,[[[1,"        "],[8,[39,11],null,[["@classNames","@image","@alt","@desiredWidth","@desiredHeight","@ghostType"],[[29,[[28,[37,12],["msg-facepile-grid__img msg-facepile-grid__img--",[30,5,["profileType"]]],null]," ",[52,[30,6],"msg-facepile-grid__img--multiple-participants-header","msg-facepile-grid__img--multiple-participants"]]],[30,5,["picture"]],[30,5,["name"]],100,100,[30,5,["profileType"]]]],null],[1,"\\n"]],[5]],null],[1,"    "],[13],[1,"\\n    "],[10,0],[14,0,"display-flex justify-center"],[12],[1,"\\n"],[42,[28,[37,9],[[28,[37,9],[[28,[37,10],[[30,1,["participantsToRender"]],2,3],null]],null]],null],null,[[[1,"        "],[8,[39,11],null,[["@classNames","@image","@alt","@desiredWidth","@desiredHeight","@ghostType"],[[29,[[28,[37,12],["msg-facepile-grid__img msg-facepile-grid__img--",[30,7,["profileType"]]],null]," ",[52,[30,6],"msg-facepile-grid__img--multiple-participants-header","msg-facepile-grid__img--multiple-participants"]]],[30,7,["picture"]],[30,7,["name"]],100,100,[30,7,["profileType"]]]],null],[1,"\\n"]],[7]],null],[41,[30,1,["hasRollup"]],[[[1,"        "],[10,0],[15,0,[29,["msg-facepile-grid__img msg-facepile-grid__img--person\\n            ",[52,[30,6],"msg-facepile-grid__img--multiple-participants-header","msg-facepile-grid__img--multiple-participants"]]]],[12],[1,"\\n          "],[10,0],[15,0,[29,["artdeco-entity-pile__rollup artdeco-entity-pile__rollup--circle artdeco-entity-pile__rollup--1\\n              ",[52,[30,6],"msg-facepile-grid__img--multiple-participants-header","msg-facepile-grid__img--multiple-participants"]]]],[12],[1,"\\n"],[41,[30,1,["hasRollupOverflow"]],[[[1,"              "],[1,[28,[35,13],["i18n_msg_facepile_grid_rollup_overflow","msg-facepile-grid/components/facepile-presenter"],null]],[1,"\\n"]],[]],[[[1,"              "],[1,[28,[35,13],["i18n_msg_facepile_grid_rollup_total","msg-facepile-grid/components/facepile-presenter"],[["count"],[[30,1,["rollupCount"]]]]]],[1,"\\n"]],[]]],[1,"          "],[13],[1,"\\n        "],[13],[1,"\\n"]],[]],null],[1,"    "],[13],[1,"\\n"]],[]],[[[42,[28,[37,9],[[28,[37,9],[[30,1,["participantsToRender"]]],null]],null],null,[[[1,"      "],[8,[39,11],null,[["@classNames","@image","@alt","@desiredWidth","@desiredHeight","@ghostType"],[[28,[37,12],["msg-facepile-grid__img msg-facepile-grid__img--",[30,8,["profileType"]]],null],[30,8,["picture"]],[30,8,["name"]],100,100,[30,8,["profileType"]]]],null],[1,"\\n"]],[8]],null]],[]]],[13]],["@viewData","@entitySize","&attrs","@iconSize","participant","@isInCoversationBubbleHeader","participant","participant"],false,["if","global-helpers@or","global-helpers@gt","global-helpers@lte","global-helpers@and","global-helpers@eq","artdeco-icons-web@li-icon","global-helpers@gte","each","-track-array","global-helpers@slice","ember-vector-images@lazy-image","concat","t"]]',moduleName:"msg-facepile-grid/components/facepile-presenter.hbs",isStrictMode:!1})
+var s=(0,t.setComponentTemplate)(r,(0,n.default)())
+e.default=s}))
+define("msg-facepile-grid/viewdata/graphql-contextual-recommendation-facepile-viewdata",["exports","msg-data/viewdata"],(function(e,t){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+const i=["participants","isGroupChat","formatter"]
+class n extends t.default{get requiredProps(){return i}get isGroupChat(){return this.props.isGroupChat}get participantsToRender(){var e
+return null===(e=this.props.participants.slice(0,2))||void 0===e?void 0:e.map((e=>{var t,i
+return{picture:null===(t=e.profilePicture)||void 0===t||null===(i=t.displayImageReferenceResolutionResult)||void 0===i?void 0:i.vectorImage,name:this.props.formatter.formatName(e,"full"),profileType:"person"}}))}}e.default=n}))
+define("msg-facepile-grid/viewdata/sdk-facepile-viewdata",["exports","msg-data/viewdata","msg-shared/utils/sdk-view-data-helpers"],(function(e,t,i){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+const n=["participants","isGroupChat","formatter"]
+class r extends t.default{get requiredProps(){return n}get isGroupChat(){return this.props.isGroupChat}get participantsToRender(){var e
+return null===(e=this.props.participants.filter((e=>!!e)).slice(0,3))||void 0===e?void 0:e.map((e=>({picture:(0,i.getParticipantPictureByKind)(e),name:(0,i.getParticipantNameByKind)(e,this.props.formatter,"full"),profileType:e.kind===i.PARTICIPANT_TYPES.ORGANIZATION?"company":"person"})))}get participantsSize(){return this.props.participants.length}get rollupCount(){return this.participantsSize-this.participantsToRender.length}get hasRollup(){return this.rollupCount>0}get hasRollupOverflow(){return this.rollupCount>99}}e.default=r}))
+define("msg-typeahead/components/connections-typeahead-feature",["exports","@babel/runtime/helpers/esm/initializerDefineProperty","@babel/runtime/helpers/esm/defineProperty","@babel/runtime/helpers/esm/applyDecoratedDescriptor","@babel/runtime/helpers/esm/initializerWarningHelper","@ember/component","@ember/template-factory","@ember/destroyable","@ember/object/internals","@ember/service","ember-lifeline","@ember/object","@glimmer/component","@glimmer/tracking","tracked-toolbox","ember","global-utils/utils/is-browser","msg-shared/utils/constants","ember-batcher","urn-utils","global-helpers/helpers/load","msg-typeahead/viewdata/graphql-connections-typeahead-viewdata","msg-shared/utils/view-data-helpers","tracked-built-ins","global-utils/utils/array/push"],(function(e,t,i,n,r,s,a,o,l,c,p,d,u,g,h,m,f,y,b,_,v,w,R,T,P){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+var O,x,D,E,I,C,k,S,M,j,N,A,F,U,z,H,W,G,V,L,q,K,Y,B,$,Z
+const Q=(0,a.createTemplateFactory)({id:"QpVIWvZZ",block:'[[[11,0],[24,0,"msg-connections-typeahead relative"],[17,1],[4,[38,0],[[28,[37,1],[[30,0],"containerElement"],null]],null],[4,[38,2],["focusin",[30,0,["onContainerFocusIn"]]],null],[12],[1,"\\n  "],[10,"label"],[15,"for",[29,[[30,0,["elementId"]],"-search-field"]]],[14,0,"visually-hidden"],[12],[1,[30,2]],[13],[1,"\\n  "],[10,"section"],[14,0,"msg-connections-typeahead__top-fixed-section"],[12],[1,"\\n    "],[11,0],[24,"tabindex","-1"],[24,0,"scrollable msg-connections-typeahead__added-recipients display-flex align-items-center pl2"],[4,[38,2],["click",[30,0,["setFocusToParticipantTextField"]]],null],[4,[38,0],[[28,[37,1],[[30,0],"addedRecipientsContainer"],null]],null],[12],[1,"\\n"],[42,[28,[37,4],[[28,[37,4],[[30,0,["viewData","selectedRecipients"]]],null]],null],null,[[[1,"        "],[8,[39,5],null,[["@class","@text","@a11yText","@onDismiss","@selected","@size"],["mv1 mr1",[30,3,["recipientName"]],[28,[37,6],["i18n_a11y_remove_recipient","msg-typeahead/components/connections-typeahead-feature"],[["recipientName"],[[30,3,["recipientName"]]]]],[28,[37,7],[[30,0,["removeSelectedRecipient"]],[30,3,["entityUrn"]]],null],true,3]],null],[1,"\\n"]],[3]],null],[1,"\\n"],[1,"      "],[11,"input"],[16,1,[28,[37,8],[[30,0,["elementId"]],"-search-field"],null]],[16,0,[28,[37,8],["msg-connections-typeahead__search-field",[52,[51,[30,0,["viewData","selectedRecipients","length"]]]," msg-connections-typeahead__search-field--no-recipients"]," ml1 mv1 ph2"],null]],[16,"placeholder",[52,[51,[30,0,["viewData","selectedRecipients","length"]]],[30,4]]],[24,"aria-autocomplete","list"],[16,"aria-owns",[28,[37,8],[[30,0,["elementId"]],"-suggestions-menu"],null]],[16,"aria-controls",[28,[37,8],[[30,0,["elementId"]],"-suggestions-menu"],null]],[24,"autocomplete","off"],[16,"aria-expanded",[52,[30,0,["showDropdown"]],"true","false"]],[16,"aria-activedescendant",[52,[30,0,["noResults"]],false,[30,0,["highlightedRecipientDomId"]]]],[24,"role","combobox"],[24,4,"text"],[4,[38,0],[[28,[37,1],[[30,0],"searchFieldElement"],null]],null],[4,[38,2],["input",[30,0,["debounceFetchRecipients"]]],null],[4,[38,2],["keydown",[30,0,["onInputKeyDown"]]],null],[4,[38,2],["focusin",[28,[37,1],[[30,0],"isFocused",true],null]],null],[4,[38,2],["focusout",[28,[37,1],[[30,0],"isFocused",false],null]],null],[4,[38,11],null,[["when"],[[28,[37,12],[[30,5],false],null]]]],[12],[13],[1,"\\n"],[1,"\\n"],[41,[30,0,["displayPlusIcon"]],[[[1,"        "],[8,[39,13],[[4,[38,2],["click",[30,0,["showSuggestions"]]],null],[4,[38,14],[[30,0,["displayPlusIconControlName"]]],null]],[["@class","@color","@size","@icon","@circle","@text"],["msg-connections-typeahead__add-icon mv2 ml2","muted",1,"add",true,[28,[37,6],["i18n_show_recipient_suggestions","msg-typeahead/components/connections-typeahead-feature"],null]]],null],[1,"\\n"]],[]],null],[1,"\\n      "],[10,0],[14,0,"msg-connections-typeahead__hidden-field"],[12],[13],[1,"\\n    "],[13],[1,"\\n  "],[13],[1,"\\n\\n"],[1,"  "],[11,0],[24,"tabindex","-1"],[16,0,[29,[[52,[30,0,["showDropdown"]],"msg-connections-typeahead__opacity-transition-in","msg-connections-typeahead__opacity-transition-out"],"\\n      scrollable msg-connections-typeahead__search-results\\n      ",[30,6]]]],[16,"aria-hidden",[29,[[28,[37,15],[[30,0,["showDropdown"]]],null]]]],[4,[38,2],["mousedown",[30,0,["preventEventChain"]]],null],[12],[1,"\\n    "],[10,0],[15,0,[52,[30,0,["showDropdown"]],"msg-connections-typeahead__margin-transition-in","msg-connections-typeahead__margin-transition-out"]],[12],[1,"\\n"],[41,[30,0,["showLoader"]],[[[1,"        "],[10,0],[14,0,"msg-connection-typeahead__loader msg-connections-typeahead__animate-fade-in"],[12],[1,"\\n          "],[8,[39,16],[[24,0,"mhA"]],[["@size"],["small"]],null],[1,"\\n        "],[13],[1,"\\n"]],[]],null],[1,"\\n"],[41,[30,0,["viewData","possibleRecipients","length"]],[[[41,[30,0,["isSuggestedList"]],[[[1,"          "],[10,0],[15,0,[29,[[52,[30,0,["loadingAnimationTransition"]],"msg-connections-typeahead__animate-fade-out","msg-connections-typeahead__animate-fade-in"],"\\n              t-bold t-14 t-black--light pb2 pl3 pt2"]]],[12],[1,"\\n            "],[1,[28,[35,6],["i18n_suggested","msg-typeahead/components/connections-typeahead-feature"],null]],[1,"\\n          "],[13],[1,"\\n"]],[]],null],[1,"        "],[10,"ul"],[15,0,[29,["list-style-none\\n            ",[52,[30,0,["loadingAnimationTransition"]],"msg-connections-typeahead__animate-fade-out","msg-connections-typeahead__animate-fade-in"]]]],[14,"role","listbox"],[15,1,[28,[37,8],[[30,0,["elementId"]],"-suggestions-menu"],null]],[12],[1,"\\n"],[42,[28,[37,4],[[28,[37,4],[[30,0,["viewData","possibleRecipients"]]],null]],null],null,[[[1,"            "],[10,"li"],[12],[1,"\\n"],[41,[28,[37,12],[[30,7,["isSuggestion"]],[28,[37,17],[[30,7,["recipientType"]],[30,0,["CONNECTIONS"]]],null],[28,[37,17],[[30,7,["recipientType"]],[30,0,["GROUP_THREADS"]]],null],[28,[37,18],[[30,9],[28,[37,17],[[30,7,["recipientType"]],[30,0,["COWORKERS"]]],null]],null]],null],[[[1,"                "],[8,[39,19],null,[["@index","@viewData","@isHighlightedRecipient","@interactionControlNamePrefix","@openConversation","@selectPersonResult","@messageComposeFlowTrackingId"],[[30,8],[30,7],[28,[37,17],[[30,8],[30,0,["highlightedPossibleRecipientIndex"]]],null],[30,10],[30,11],[30,0,["selectPossibleRecipient"]],[30,12]]],null],[1,"\\n"]],[]],[[[1,"                "],[8,[39,20],null,[["@fetchComposeOptionOnRender","@recipientUrns","@screenContext","@referringModuleKey","@controlUrn"],[true,[30,7,["entityUrn"]],"MESSAGING","messaging:compose_typeahead","messaging_typeahead_person_result"]],[["default"],[[[[1,"\\n                  "],[8,[39,19],null,[["@index","@viewData","@isHighlightedRecipient","@isNonConnection","@interactionControlNamePrefix","@selectPersonResult"],[[30,8],[30,7],[28,[37,17],[[30,8],[30,0,["highlightedPossibleRecipientIndex"]]],null],true,[30,10],[28,[37,7],[[30,15],[30,13],[30,14]],null]]],null],[1,"\\n                "]],[13,14]]]]],[1,"\\n"]],[]]],[1,"            "],[13],[1,"\\n"]],[7,8]],null],[1,"        "],[13],[1,"\\n"]],[]],[[[41,[30,0,["noResults"]],[[[1,"        "],[10,0],[14,0,"msg-connections-typeahead__no-result p2 display-flex align-items-center"],[12],[1,"\\n          "],[8,[39,21],null,[["@message"],[[52,[30,0,["onlyConnectionResults"]],[28,[37,6],["i18n_no_connection_results","msg-typeahead/components/connections-typeahead-feature"],null],[28,[37,6],["i18n_no_results","msg-typeahead/components/connections-typeahead-feature"],null]]]],null],[1,"\\n        "],[13],[1,"\\n      "]],[]],null]],[]]],[1,"    "],[13],[1,"\\n  "],[13],[1,"\\n"],[41,[30,0,["showSuggestedRecipientsTray"]],[[[1,"    "],[8,[39,22],null,[["@addRecipientToTypeahead","@suggestedRecipients"],[[30,0,["selectPossibleRecipient"]],[30,0,["viewData","suggestedRecipientsInTray"]]]],null],[1,"\\n"]],[]],null],[1,"  "],[18,16,[[28,[37,24],null,[["resetTypeahead"],[[30,0,["resetTypeahead"]]]]]]],[1,"\\n"],[13]],["&attrs","@a11yText","recipient","@placeholder","@hasInitialFocus","@searchResultContainerClass","recipient","index","@enableGroupMessageRequests","@trackingPrefix","@openConversation","@messageComposeFlowTrackingId","openMessaging","entryPointData","@composeToNonConnection","&default"],false,["did-insert","ember-set-helper@set","on","each","-track-array","artdeco-pill@artdeco-pill-dismiss","t","fn","concat","unless","if","global-modifiers@focus","global-helpers@or","artdeco-button@artdeco-button","ember-cli-pemberly-tracking@track-interaction","global-helpers@not","artdeco-loader@artdeco-loader","global-helpers@eq","global-helpers@and","msg-typeahead@possible-recipient-presenter","message-button@entry-point","artdeco-inline-feedback@artdeco-inline-feedback","msg-typeahead@suggested-recipients-tray-presenter","yield","hash"]]',moduleName:"msg-typeahead/components/connections-typeahead-feature.hbs",isStrictMode:!1}),{CONNECTIONS:J,COWORKERS:X,GROUP_THREADS:ee,PEOPLE:te}=y.MESSAGE_TYPEAHEAD_SEARCH_TYPES
+let ie=(O=(0,c.inject)("global-services@a11y-notification"),x=(0,c.inject)("formatter"),D=(0,c.inject)("i18n"),E=(0,c.inject)("lix"),I=(0,c.inject)("msg-data@data-manager"),C=(0,c.inject)("tracking"),k=class extends u.default{constructor(){super(...arguments);(0,t.default)(this,"a11yNotification",S,this);(0,t.default)(this,"formatter",M,this);(0,t.default)(this,"i18n",j,this);(0,t.default)(this,"lix",N,this);(0,t.default)(this,"msgDataManager",A,this);(0,t.default)(this,"tracking",F,this);(0,i.default)(this,"elementId",(0,l.guidFor)(this));(0,i.default)(this,"containerElement",void 0);(0,i.default)(this,"addedRecipientsContainer",void 0);(0,i.default)(this,"searchFieldElement",void 0);(0,i.default)(this,"GROUP_THREADS",ee);(0,i.default)(this,"CONNECTIONS",J);(0,i.default)(this,"COWORKERS",X);(0,t.default)(this,"searchTerm",U,this);(0,t.default)(this,"activeFetch",z,this);(0,t.default)(this,"noResults",H,this);(0,t.default)(this,"isSuggestedList",W,this);(0,t.default)(this,"isFocused",G,this);(0,t.default)(this,"loadingAnimationTransition",V,this);(0,t.default)(this,"showDropdownManualOverride",L,this);(0,t.default)(this,"showSuggestedRecipientsTray",q,this);(0,t.default)(this,"highlightedPossibleRecipientIndex",K,this);(0,t.default)(this,"highlightedRecipientDomId",Y,this);(0,t.default)(this,"possibleRecipients",B,this);(0,t.default)(this,"suggestedRecipientsInTray",$,this);(0,t.default)(this,"selectedRecipients",Z,this)}get trackingPrefix(){return this.args.trackingPrefix??""}get displayPlusIcon(){return this.args.recipientSuggestionEnabled&&0===this.searchTerm.length&&!this.showDropdown&&this.selectedRecipients.length>0}get displayPlusIconControlName(){return`${this.trackingPrefix}plus_icon`}get onlyConnectionResults(){return this.selectedRecipients.length||!(this.args.includeGroupConversationResults||this.args.includeNonConnectionResults)}get showDropdown(){return this.isFocused&&this.searchTerm||this.loadingAnimationTransition||this.showDropdownManualOverride}get showLoader(){var e
+return null===(e=this.activeFetch)||void 0===e?void 0:e.isLoading}get viewData(){return new w.default({possibleRecipients:this.possibleRecipients,suggestedRecipientsInTray:this.suggestedRecipientsInTray,selectedRecipients:this.selectedRecipients,formatter:this.formatter})}_ensureHighlightedRecipientIsScrolledIntoView(){var e
+const t=this._getHighlightedRecipientElement()
+if(!t)return
+const i=t.offsetTop,n=i+t.offsetHeight,r=null===(e=this.containerElement)||void 0===e?void 0:e.querySelector(".msg-connections-typeahead__search-results")
+if(r){const e=r.offsetHeight,t=r.scrollTop
+n>t+e?r.scrollTop=n-e:i<t&&(r.scrollTop=i)}}_handleEnterKey(){const e=this._getHighlightedRecipientElement()
+if(e){if(f.default&&e){e.click()
+this.highlightedPossibleRecipientIndex=0
+this.tracking.fireInteractionEvent("search_add_enterkey")}}else{var t
+null===(t=this.args)||void 0===t||t.actionOnTypeaheadEnter()}}_getHighlightedRecipientElement(){if(this.viewData.possibleRecipients.length){var e
+const{domId:t}=this.viewData.possibleRecipients[this.highlightedPossibleRecipientIndex]
+this.highlightedRecipientDomId=t
+return t&&(null===(e=this.containerElement)||void 0===e?void 0:e.querySelector(`#${t}`))}return null}_focusSearchField(){this.searchFieldElement.focus()}_moveHighlightedRecipient(e){const{possibleRecipients:t,highlightedPossibleRecipientIndex:i}=this,{length:n}=t,r=(i+e+n)%n
+this._setHighlightedRecipientIndex(r)}_setHighlightedRecipientIndex(e){this.highlightedPossibleRecipientIndex=e
+this._ensureHighlightedRecipientIsScrolledIntoView()}_sendA11yNotification(e,t){return this.a11yNotification.setTextInLiveRegion(this.i18n.lookupTranslation("components/msg-typeahead@connections-typeahead-feature",e)([t]))}possibleRecipientIsInExcludeLists(e){var t
+const i=(null===(t=this.args.recipientsToFilterOut)||void 0===t?void 0:t.map((e=>e.entityUrn)))??[]
+return this.selectedRecipients.map((e=>(0,R.getProfileDashUrn)(e.profileAPIModel))).includes(e)||i.includes(e)}_fetchRecipients(e){const t=[J]
+let i=null
+if("MUTUAL_CONNECTIONS"===this.args.messagePermission)i=this.args.postAuthorProfileUrn
+else if(this.args.hasForwardedContent)!this.selectedRecipients.length&&this.args.includeGroupConversationResults&&t.push(ee)
+else if(this.selectedRecipients.length)this.args.enableGroupMessageRequests&&t.push(X)
+else{this.args.includeGroupConversationResults&&t.push(ee)
+this.args.includeNonConnectionResults&&t.push(te)
+this.args.includeCoworkerResults&&t.push(X)}this.isSuggestedList=!1
+this.loadingAnimationTransition=!0
+const n=this.msgDataManager.fetchTypeaheadResults(e,t,i).then((e=>{if(!this.isDestroying){this.loadingAnimationTransition=!1
+if(e.length){this.possibleRecipients=e.map((e=>e.content??e)).filter((e=>{var t,i,n
+return!this.possibleRecipientIsInExcludeLists(null===(t=e.targetEntityViewModel)||void 0===t||null===(i=t.entity)||void 0===i||null===(n=i.profile)||void 0===n?void 0:n.entityUrn)}))
+this._setHighlightedRecipientIndex(0)}else this.noResults=!0
+this._sendA11yNotification("i18n_a11y_suggestions_hint_text",{resultsLength:this.possibleRecipients.length})}}))
+this.activeFetch=(0,v.load)(n)}_fetchSuggestedRecipients(){let e=null
+"MUTUAL_CONNECTIONS"===this.args.messagePermission&&(e=this.args.postAuthorProfileUrn)
+return this.msgDataManager.fetchSuggestedRecipients(this.selectedRecipients.map((e=>{var t
+return null===(t=e.profileAPIModel)||void 0===t?void 0:t.entityUrn})),e).then((e=>{if(!(0,o.isDestroying)(this))return null!=e&&e.length?e.map((e=>e.content??e)).filter((e=>{var t,i
+return!this.possibleRecipientIsInExcludeLists(null===(t=e.suggestedRecipientProfile)||void 0===t||null===(i=t.miniProfile)||void 0===i?void 0:i.entityUrn)})):[]}))}_fetchSuggestedRecipientsForSuggestionsTray(){this._fetchSuggestedRecipients().then((e=>{if(!this.isDestroying&&e.length){this.showSuggestedRecipientsTray=!0
+this.suggestedRecipientsInTray=e}}))}_setContextToMessageCoworker(e){if(e.contextEntityUrn&&this.args.enableGroupMessageRequests&&1===this.selectedRecipients.length){var t,i
+null===(t=(i=this.args).setComposeContext)||void 0===t||t.call(i,e.entityUrn,e.contextEntityUrn)}}_addRecipient(e){(0,P.pushValue)(this.selectedRecipients,e)
+this._updateRecipients()
+this._sendA11yNotification("i18n_a11y_added_recipient",{name:e.recipientName})
+this.searchFieldElement.value=""
+this.searchTerm=""
+this.possibleRecipients=[]
+this._focusSearchField();(0,b.mutateDOM)((()=>{this.isDestroying||(this.addedRecipientsContainer.scrollTop=this.addedRecipientsContainer.scrollHeight)}))}_removeRecipient(e){this.selectedRecipients.removeObject(e)
+this._updateRecipients()
+this._sendA11yNotification("i18n_a11y_removed_recipient",{name:e.recipientName})
+this._focusSearchField()}_updateRecipients(){var e,t
+null===(e=(t=this.args).recipientsChanged)||void 0===e||e.call(t,this.selectedRecipients.map((e=>e.profileAPIModel)),this.selectedRecipients.filter((e=>e.contextEntityUrn)).map((e=>{var t
+return{recipient:(0,_.extractEntityInfoFromUrn)(null===(t=e.profileAPIModel)||void 0===t?void 0:t.entityUrn).id,contextEntityUrn:e.contextEntityUrn}})))
+this.args.showSuggestedRecipientTray&&this._fetchSuggestedRecipientsForSuggestionsTray()}setFocusToParticipantTextField(){this._focusSearchField()
+this.showDropdownManualOverride=!1}showSuggestions(e){e.stopPropagation()
+this._focusSearchField()
+this.showDropdownManualOverride=!0
+this.loadingAnimationTransition=!0
+const t=this._fetchSuggestedRecipients().then((e=>{if(!(0,o.isDestroying)(this)&&e){this.isSuggestedList=!0
+this.loadingAnimationTransition=!1
+if(e.length){this.possibleRecipients=e
+this._setHighlightedRecipientIndex(0)}else this.noResults=!0
+this._sendA11yNotification("i18n_a11y_suggested_recipients_hint_text",{})}}))
+this.activeFetch=(0,v.load)(t)}selectPossibleRecipient(e){if(this.selectedRecipients.includes(e))this._removeRecipient(e)
+else{this.showDropdownManualOverride=!1
+this._addRecipient(e)
+this._setContextToMessageCoworker(e)}}removeSelectedRecipient(e){this._removeRecipient(this.selectedRecipients.find((t=>{var i
+return(null===(i=t.profileAPIModel)||void 0===i?void 0:i.entityUrn)===e})))}debounceFetchRecipients(){const e=this.searchTerm
+this.searchTerm=this.searchFieldElement.value
+!e&&this.searchTerm&&this.tracking.fireInteractionEvent(`${this.trackingPrefix}begin_recipient_search`)
+if(this.searchTerm){if(!e){this.possibleRecipients=[]
+this.activeFetch=null}this.noResults=!1
+if(m.default.testing)this._fetchRecipients(this.searchTerm)
+else{const e=m.default.testing?0:200
+this.debounce=(0,p.debounceTask)(this,"_fetchRecipients",this.searchTerm,e)}}}resetTypeahead(){this.selectedRecipients=new T.TrackedArray([])}preventEventChain(e){e.preventDefault()}onContainerFocusIn(e){const t=e.target&&e.target.id,i=this.possibleRecipients.find((e=>e.domId===t))
+i&&this._setHighlightedRecipientIndex(i)}onInputKeyDown(e){switch(e.keyCode){case y.KEYCODES.UP_ARROW:this._moveHighlightedRecipient(-1)
+e.preventDefault()
+break
+case y.KEYCODES.DOWN_ARROW:this._moveHighlightedRecipient(1)
+e.preventDefault()
+break
+case y.KEYCODES.BACKSPACE:if(e.target.classList.contains("msg-connections-typeahead__search-field")&&!e.target.value){const e=this.selectedRecipients.lastObject
+e&&this._removeRecipient(e)}break
+case y.KEYCODES.ENTER:e.target===this.searchFieldElement&&this._handleEnterKey()}}},S=(0,n.default)(k.prototype,"a11yNotification",[O],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),M=(0,n.default)(k.prototype,"formatter",[x],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),j=(0,n.default)(k.prototype,"i18n",[D],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),N=(0,n.default)(k.prototype,"lix",[E],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),A=(0,n.default)(k.prototype,"msgDataManager",[I],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),F=(0,n.default)(k.prototype,"tracking",[C],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),U=(0,n.default)(k.prototype,"searchTerm",[g.tracked],{configurable:!0,enumerable:!0,writable:!0,initializer:function(){return""}}),z=(0,n.default)(k.prototype,"activeFetch",[g.tracked],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),H=(0,n.default)(k.prototype,"noResults",[g.tracked],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),W=(0,n.default)(k.prototype,"isSuggestedList",[g.tracked],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),G=(0,n.default)(k.prototype,"isFocused",[g.tracked],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),V=(0,n.default)(k.prototype,"loadingAnimationTransition",[g.tracked],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),L=(0,n.default)(k.prototype,"showDropdownManualOverride",[g.tracked],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),q=(0,n.default)(k.prototype,"showSuggestedRecipientsTray",[g.tracked],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),K=(0,n.default)(k.prototype,"highlightedPossibleRecipientIndex",[g.tracked],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),Y=(0,n.default)(k.prototype,"highlightedRecipientDomId",[g.tracked],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),B=(0,n.default)(k.prototype,"possibleRecipients",[g.tracked],{configurable:!0,enumerable:!0,writable:!0,initializer:function(){return[]}}),$=(0,n.default)(k.prototype,"suggestedRecipientsInTray",[g.tracked],{configurable:!0,enumerable:!0,writable:!0,initializer:function(){return[]}}),Z=(0,n.default)(k.prototype,"selectedRecipients",[g.tracked],{configurable:!0,enumerable:!0,writable:!0,initializer:function(){var e
+return new T.TrackedArray((null===(e=this.args.prefilledRecipients)||void 0===e?void 0:e.map((e=>({profileAPIModel:e}))))??[])}}),(0,n.default)(k.prototype,"viewData",[h.cached],Object.getOwnPropertyDescriptor(k.prototype,"viewData"),k.prototype),(0,n.default)(k.prototype,"setFocusToParticipantTextField",[d.action],Object.getOwnPropertyDescriptor(k.prototype,"setFocusToParticipantTextField"),k.prototype),(0,n.default)(k.prototype,"showSuggestions",[d.action],Object.getOwnPropertyDescriptor(k.prototype,"showSuggestions"),k.prototype),(0,n.default)(k.prototype,"selectPossibleRecipient",[d.action],Object.getOwnPropertyDescriptor(k.prototype,"selectPossibleRecipient"),k.prototype),(0,n.default)(k.prototype,"removeSelectedRecipient",[d.action],Object.getOwnPropertyDescriptor(k.prototype,"removeSelectedRecipient"),k.prototype),(0,n.default)(k.prototype,"debounceFetchRecipients",[d.action],Object.getOwnPropertyDescriptor(k.prototype,"debounceFetchRecipients"),k.prototype),(0,n.default)(k.prototype,"resetTypeahead",[d.action],Object.getOwnPropertyDescriptor(k.prototype,"resetTypeahead"),k.prototype),(0,n.default)(k.prototype,"preventEventChain",[d.action],Object.getOwnPropertyDescriptor(k.prototype,"preventEventChain"),k.prototype),(0,n.default)(k.prototype,"onContainerFocusIn",[d.action],Object.getOwnPropertyDescriptor(k.prototype,"onContainerFocusIn"),k.prototype),(0,n.default)(k.prototype,"onInputKeyDown",[d.action],Object.getOwnPropertyDescriptor(k.prototype,"onInputKeyDown"),k.prototype),k)
+e.default=ie;(0,s.setComponentTemplate)(Q,ie)}))
+define("msg-typeahead/components/possible-recipient-presenter",["exports","@babel/runtime/helpers/esm/defineProperty","@babel/runtime/helpers/esm/applyDecoratedDescriptor","@ember/component","@ember/template-factory","@ember/object","@glimmer/component","msg-shared/utils/constants"],(function(e,t,i,n,r,s,a,o){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+var l
+const c=(0,r.createTemplateFactory)({id:"/hU9bgf7",block:'[[[10,0],[14,0,"display-flex full-width msg-connections-typeahead__search-result-row"],[12],[1,"\\n  "],[11,"button"],[16,1,[30,1,["domId"]]],[16,0,[29,["display-flex flex-row align-items-center msg-connections-typeahead__search-result\\n      ",[52,[30,2],"msg-connections-typeahead__search-result--highlighted"],"\\n      ",[52,[30,3],"msg-connections-typeahead__search-result-multisend"]]]],[24,"tabindex","-1"],[24,4,"button"],[16,"aria-selected",[52,[30,2],"true","false"]],[17,4],[4,[38,1],["click",[30,0,["handleClick"]]],null],[4,[38,2],[[30,0,["interactionControlName"]]],[["onInteract"],[[30,0,["interactionTypeaheadTrackingEvent"]]]]],[4,[38,3],[[30,0,["impressionTypeaheadTrackingEvent"]]],[["routeName","currentRoute"],[[28,[37,4],[[53,"outletState"],"render.name"],null],[28,[37,4],[[53,"outletState"],"render"],null]]]],[12],[1,"\\n"],[41,[28,[37,6],[[30,1,["recipientType"]],[30,0,["GROUP_THREADS"]]],null],[[[41,[30,1,["imageViewModel"]],[[[1,"        "],[8,[39,7],null,[["@images","@entitySize","@gridSize","@class"],[[30,1,["imageViewModel"]],[52,[30,1,["isGroupTypeaheadResult"]],1,2],2,"msg-facepile-grid msg-facepile-grid--group-size-2 msg-facepile-grid--3"]],null],[1,"\\n"]],[]],[[[1,"        "],[8,[39,8],null,[["@viewData","@groupChat","@entitySize","@iconSize"],[[30,1,["facepileViewData"]],true,3,"small"]],null],[1,"\\n"]],[]]]],[]],[[[1,"      "],[8,[39,9],[[24,0,"msg-connections-typeahead__presence-entity"]],[["@viewData","@indicatorClasses","@size","@a11yText"],[[30,1,["entityWithPresenceViewData"]],"msg-connections-typeahead__presence-entity-indicator",2,[28,[37,10],["i18n_a11y_name_for_photo_of_recipient","msg-typeahead/components/possible-recipient-presenter"],[["recipientName"],[[30,1,["recipientName"]]]]]]],null],[1,"\\n"]],[]]],[1,"    "],[10,0],[14,0,"msg-connections-typeahead__entity-description"],[12],[1,"\\n      "],[10,"dl"],[14,0,"display-flex flex-column truncate msg-connections-typeahead__entity-description-list"],[12],[1,"\\n        "],[10,"dt"],[14,0,"t-14 t-black t-bold truncate"],[12],[1,"\\n          "],[1,[30,1,["text"]]],[1,"\\n        "],[13],[1,"\\n"],[41,[30,1,["subtext"]],[[[1,"          "],[10,"dd"],[14,0,"t-12 t-black--light t-normal truncate"],[12],[1,"\\n            "],[1,[30,1,["subtext"]]],[1,"\\n          "],[13],[1,"\\n"]],[]],null],[41,[30,1,["contextText"]],[[[1,"          "],[10,"dd"],[14,0,"t-12 t-black--light t-normal truncate"],[12],[1,"\\n            "],[1,[28,[35,11],[[30,1,["contextText"]]],null]],[1,"\\n          "],[13],[1,"\\n"]],[]],null],[1,"      "],[13],[1,"\\n    "],[13],[1,"\\n  "],[13],[1,"\\n"],[41,[30,3],[[[1,"    "],[8,[39,12],[[16,1,[28,[37,13],["possible-recipient-presenter__checkbox-",[30,1,["recipientName"]]],null]],[4,[38,1],["click",[30,0,["handleClick"]]],null]],[["@type","@checked"],["checkbox",[30,5]]],null],[1,"\\n    "],[10,"label"],[15,"for",[28,[37,13],["possible-recipient-presenter__checkbox-",[30,1,["recipientName"]]],null]],[14,0,"mt4 msg-connections-typeahead__checkbox-multisend"],[12],[1,"\\n      "],[10,2],[14,0,"visually-hidden"],[12],[1,[28,[35,10],["i18n_label_for_recipient_checkbox","msg-typeahead/components/possible-recipient-presenter"],[["recipientName"],[[30,1,["recipientName"]]]]]],[13],[1,"\\n    "],[13],[1,"\\n"]],[]],null],[13]],["@viewData","@isHighlightedRecipient","@isMultiSend","&attrs","@isSelectedRecipient"],false,["if","on","ember-cli-pemberly-tracking@track-interaction","ember-cli-pemberly-tracking@track-impression","get","-get-dynamic-var","global-helpers@eq","image-view-model@image-view-model","msg-facepile-grid@facepile-presenter","presence@entity-with-presence-presenter","t","text-view-model@text-view-model","input","concat"]]',moduleName:"msg-typeahead/components/possible-recipient-presenter.hbs",isStrictMode:!1}),{GROUP_THREADS:p,COWORKERS:d}=o.MESSAGE_TYPEAHEAD_RESULT_TYPES
+let u=(l=class extends a.default{constructor(){super(...arguments);(0,t.default)(this,"GROUP_THREADS",p)}get interactionControlNamePrefix(){return this.args.interactionControlNamePrefix??""}get interactionControlName(){let e=""
+const{recipientType:t}=this.args.viewData
+e=this.args.customControlName?this.args.customControlName:t===p?"search_add_group":t===d?"search_add_coworker":this.args.isNonConnection?"search_add_nonconnection":"search_add"
+return`${this.interactionControlNamePrefix}${e}`}handleClick(e){this.args.viewData.recipientType!==p||this.args.isMultiSend?this.args.selectPersonResult(this.args.viewData,e):this.args.openConversation(this.args.viewData.groupThreadConversationId)}interactionTypeaheadTrackingEvent(){return this.args.messageComposeFlowTrackingId?{name:"MessagingTypeaheadActionEvent",topic:"MessagingTypeaheadActionEvent",body:{selectionMethod:"CLICK",typeaheadTrackingId:this.args.viewData.trackingId}}:[]}impressionTypeaheadTrackingEvent(e){let{duration:t,visibleTime:i}=e
+return this.args.messageComposeFlowTrackingId?{name:"MessagingTypeaheadImpressionEvent",topic:"MessagingTypeaheadImpressionEvent",body:{duration:t,appearanceTime:i,typeaheadTrackingId:this.args.viewData.trackingId,messageComposeFlowTrackingId:this.args.messageComposeFlowTrackingId,listPosition:{index:this.args.index+1}}}:[]}},(0,i.default)(l.prototype,"handleClick",[s.action],Object.getOwnPropertyDescriptor(l.prototype,"handleClick"),l.prototype),(0,i.default)(l.prototype,"interactionTypeaheadTrackingEvent",[s.action],Object.getOwnPropertyDescriptor(l.prototype,"interactionTypeaheadTrackingEvent"),l.prototype),(0,i.default)(l.prototype,"impressionTypeaheadTrackingEvent",[s.action],Object.getOwnPropertyDescriptor(l.prototype,"impressionTypeaheadTrackingEvent"),l.prototype),l)
+e.default=u;(0,n.setComponentTemplate)(c,u)}))
+define("msg-typeahead/components/suggested-recipients-tray-presenter",["exports","@babel/runtime/helpers/esm/applyDecoratedDescriptor","@ember/component","@ember/template-factory","@glimmer/component","@ember/object"],(function(e,t,i,n,r,s){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+var a
+const o=(0,n.createTemplateFactory)({id:"jl41JOMx",block:'[[[10,0],[14,0,"msg-suggested-recipients-tray"],[12],[1,"\\n  "],[10,0],[14,0,"display-flex full-width flex-column"],[12],[1,"\\n    "],[10,"label"],[14,0,"mb2 mt0"],[12],[1,[28,[35,0],["i18n_suggested","msg-typeahead/components/suggested-recipients-tray-presenter"],null]],[13],[1,"\\n    "],[10,0],[12],[1,"\\n"],[42,[28,[37,2],[[28,[37,2],[[28,[37,3],[[30,1],0,2],null]],null]],null],"entityUrn",[[[1,"        "],[11,"button"],[24,0,"t-bold t-black mr2"],[24,4,"button"],[4,[38,4],["click",[28,[37,5],[[30,3],[30,2]],null]],null],[4,[38,6],["quick_add_tray"],[["onInteract"],[[28,[37,5],[[30,0,["customTrackingEvent"]],[30,2,["trackingId"]]],null]]]],[4,[38,7],[[28,[37,5],[[30,0,["createImpressionEvent"]],[30,2,["entityUrn"]],[30,2,["trackingId"]]],null]],[["routeName","currentRoute"],[[28,[37,8],[[53,"outletState"],"render.name"],null],[28,[37,8],[[53,"outletState"],"render"],null]]]],[12],[1,"\\n          "],[1,[30,2,["recipientName"]]],[1,"\\n        "],[13],[1,"\\n"]],[2]],null],[1,"    "],[13],[1,"\\n  "],[13],[1,"\\n"],[13]],["@suggestedRecipients","suggestedRecipient","@addRecipientToTypeahead"],false,["t","each","-track-array","global-helpers@slice","on","fn","ember-cli-pemberly-tracking@track-interaction","ember-cli-pemberly-tracking@track-impression","get","-get-dynamic-var"]]',moduleName:"msg-typeahead/components/suggested-recipients-tray-presenter.hbs",isStrictMode:!1})
+let l=(a=class extends r.default{customTrackingEvent(e,t){let{controlUrn:i}=t
+return{name:"MessagingRecommendationActionEvent",body:{actionCategory:"SELECT",controlUrn:i,recommendationTrackingId:e,usecase:"COMPOSE_TRAY_MEMBER_FOR_GROUP"}}}createImpressionEvent(e,t){return{name:"MessagingRecommendationImpressionEvent",body:{recommendedEntity:{duration:0,usecase:"COMPOSE_TRAY_MEMBER_FOR_GROUP",recommendedEntityUrn:e,listPosition:{index:0},recommendationTrackingId:t,visibleTime:0}}}}},(0,t.default)(a.prototype,"customTrackingEvent",[s.action],Object.getOwnPropertyDescriptor(a.prototype,"customTrackingEvent"),a.prototype),(0,t.default)(a.prototype,"createImpressionEvent",[s.action],Object.getOwnPropertyDescriptor(a.prototype,"createImpressionEvent"),a.prototype),a)
+e.default=l;(0,i.setComponentTemplate)(o,l)}))
+define("msg-typeahead/viewdata/graphql-connections-typeahead-viewdata",["exports","@babel/runtime/helpers/esm/applyDecoratedDescriptor","tracked-toolbox","msg-data/viewdata","msg-typeahead/viewdata/graphql-possible-recipient-viewdata","msg-typeahead/viewdata/selected-recipient-viewdata"],(function(e,t,i,n,r,s){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+var a
+const o=["possibleRecipients","suggestedRecipientsInTray","selectedRecipients","formatter"]
+let l=(a=class extends n.default{get requiredProps(){return o}get selectedRecipients(){return this.props.selectedRecipients.map((e=>new s.default({formatter:this.props.formatter,profile:e.profileAPIModel})))}get possibleRecipients(){return this.props.possibleRecipients.map((e=>new r.default({possibleRecipient:e,formatter:this.props.formatter})))}get suggestedRecipientsInTray(){return this.props.suggestedRecipientsInTray.map((e=>new r.default({possibleRecipient:e,formatter:this.props.formatter})))}},(0,t.default)(a.prototype,"selectedRecipients",[i.cached],Object.getOwnPropertyDescriptor(a.prototype,"selectedRecipients"),a.prototype),(0,t.default)(a.prototype,"possibleRecipients",[i.cached],Object.getOwnPropertyDescriptor(a.prototype,"possibleRecipients"),a.prototype),(0,t.default)(a.prototype,"suggestedRecipientsInTray",[i.cached],Object.getOwnPropertyDescriptor(a.prototype,"suggestedRecipientsInTray"),a.prototype),a)
+e.default=l}))
+define("msg-typeahead/viewdata/graphql-possible-recipient-viewdata",["exports","@babel/runtime/helpers/esm/defineProperty","@babel/runtime/helpers/esm/applyDecoratedDescriptor","@ember/object/internals","tracked-toolbox","global-helpers/utils/get-attributed-text-html","msg-data/viewdata","presence/viewdata/host-entity-with-presence-viewdata","msg-shared/utils/constants","msg-data/utils/urn-id-helpers"],(function(e,t,i,n,r,s,a,o,l,c){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+var p
+const{CONNECTIONS:d,GROUP_THREADS:u,COWORKERS:g,PEOPLE:h,PROFILE:m}=l.MESSAGE_TYPEAHEAD_RESULT_TYPES,f=["possibleRecipient","formatter"]
+let y=(p=class extends a.default{constructor(){super(...arguments);(0,t.default)(this,"domId",(0,n.guidFor)(this))}get requiredProps(){return f}get isSuggestion(){return!!this.props.possibleRecipient.recipientEntityViewModel}get entityViewModel(){return this.props.possibleRecipient.targetEntityViewModel??this.props.possibleRecipient.recipientEntityViewModel}get contextEntityUrn(){return this.props.possibleRecipient.contextEntityUrn}get contextText(){return this.props.possibleRecipient.contextText}get recipientType(){if(this.isSuggestion){var e
+return null!==(e=this.entityViewModel.entity)&&void 0!==e&&e.conversation?u:void 0}switch(this.props.possibleRecipient.type){case d:return d
+case u:return u
+case h:return h
+case g:return g
+default:return m}}get entityUrn(){var e,t,i
+return(null===(e=this.entityViewModel.entity)||void 0===e||null===(t=e.profile)||void 0===t?void 0:t.entityUrn)??(null===(i=this.entityViewModel.entity)||void 0===i?void 0:i.conversation)}get groupThreadConversationId(){if(this.recipientType===u)return(0,c.extractMailboxAndConversationId)(this.entityUrn).conversationId}get trackingId(){return this.props.possibleRecipient.trackingId}get text(){return(0,s.default)(this.entityViewModel.title)}get subtext(){return(0,s.default)(this.entityViewModel.subtitle)}get profileAPIModel(){var e
+return null===(e=this.entityViewModel.entity)||void 0===e?void 0:e.profile}get recipientName(){var e
+return this.recipientType===u?this.text:this.props.formatter.formatName(null===(e=this.entityViewModel.entity)||void 0===e?void 0:e.profile,"full")}get isGroupTypeaheadResult(){var e
+return!(null===(e=this.entityViewModel.entity)||void 0===e||!e.conversation)}get imageViewModel(){return this.entityViewModel.image}get entityWithPresenceViewData(){return new o.default({profile:this.profileAPIModel,altText:""})}},(0,i.default)(p.prototype,"entityWithPresenceViewData",[r.cached],Object.getOwnPropertyDescriptor(p.prototype,"entityWithPresenceViewData"),p.prototype),p)
+e.default=y}))
+define("msg-typeahead/viewdata/selected-recipient-viewdata",["exports","msg-data/viewdata"],(function(e,t){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+const i=["profile","formatter"]
+class n extends t.default{get requiredProps(){return i}get entityUrn(){return this.props.profile.entityUrn}get recipientName(){return this.props.formatter.formatName(this.props.profile,"full")}}e.default=n}))
+
+//# sourceMappingURL=engine-vendor.map
