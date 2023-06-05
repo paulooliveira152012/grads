@@ -1,5 +1,5 @@
 body {
-    background-color: #E3E4E6;
+    /* background-color: #E3E4E6; */
     font-family: 'Courier New', Courier, monospace;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-family: 'Oswald', sans-serif;
@@ -20,7 +20,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #469597;
+    color: #00fbff;
 }
 
 .navbar a {
@@ -125,7 +125,7 @@ header img {
 
   .slide h1:hover {
     cursor: copy;
-    color: white;
+    color: #008082;
     opacity: 1;
     transition: .1s;
     cursor: pointer;
@@ -250,6 +250,10 @@ header img {
     margin-bottom: 0px;
 }
 
+.comingSoon {
+    display: none;
+}
+
 /* .aboutSection #studyGroupsSection img {
     width: 100%;
 } */
@@ -326,6 +330,7 @@ header img {
 }
 
 @media screen and (max-width:940px) {
+
 .aboutSection {
     display: flex;
     flex-direction: column;
@@ -524,11 +529,25 @@ article .right h2 {
     display: none;
 }
 
+.comingSoonDisplay {
+    font-style: italic; 
+    font-size: 20px; 
+    background-color: black; 
+    text-align: right; 
+    padding-right: 20px; 
+    margin-bottom: 0px; 
+    /* border-radius: 0 0 20px 20px; */
+    margin-top: -30px;
+}
+
 @media screen and (max-width: 768px) {
 
-    .body {
-        /* padding: 0px; */
-        /* margin-top: 0; */
+    .comingSoonDisplay {
+        display: none;
+    }
+
+    .comingSoon {
+        display: block;
     }
 
     .body ul {
