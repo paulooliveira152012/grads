@@ -580,7 +580,8 @@ article .right h2 {
     }
 
     .body .image {
-        height: 150px;
+        height: 300px;
+        
         /* margin-bottom: 20px; */
         /* margin-top: 20px; */
         /* transform: scale(0.8); */
@@ -591,6 +592,10 @@ article .right h2 {
         color: white;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
+    }
+
+    .black h2 {
+        margin-top: 30px;
     }
 
     .body img {
