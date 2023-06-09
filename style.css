@@ -140,6 +140,14 @@ header img {
     text-align: center;
 }
 
+.offer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
 /* mobile responsiveness */
 @media screen and (max-width: 600px) {
 
