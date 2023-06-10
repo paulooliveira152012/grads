@@ -792,6 +792,7 @@ footer {
     color: white;
     background-size: cover;
     background-position: center;
+    padding-bottom: 75px;
 }
 
 footer a {
