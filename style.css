@@ -10,6 +10,13 @@ body {
     color: white;
 }
 
+.navbar ul {
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .navbar-nav li {
     margin-top: 5px;
     margin-left: 20px;
@@ -30,7 +37,13 @@ footer a:hover {
 
 .nav-item a {
     color: #01A79E;
-    margin-left: 8.5px;
+    /* margin-left: 8.5px; */
+}
+
+.nav-item a:hover {
+    color: #09514d;
+    /* margin-left: 8.5px; */
+    text-decoration: none;
 }
 
 .navbar-toggler {
@@ -100,7 +113,7 @@ header img {
 }
 
 .rideShare {
-    background-image: url("./images/rideshare.jpg");
+    background-image: url("./images/newRideShare.jpeg");
 }
 
 .studyGroups {
@@ -119,8 +132,8 @@ header img {
   .slide h1 {
     padding: 10px;
     border-radius: 10px;
-    background-color: #E5E3E4;
-    color: #01A79E;
+    background-color: #008082;
+    color: #ffffff;
     font-size: 2em;
   }
 
@@ -147,6 +160,10 @@ header img {
     background-color: black;
     color: white;
     text-align: center;
+}
+
+.offer span {
+    color: yellow;
 }
 
 /* mobile responsiveness */
@@ -228,13 +245,28 @@ header img {
 /* about section */
 .aboutSection {
     display: flex;
-    background-color: #BBC6C8;
-    /* color: white; */
+    /* background-color: #038480; */
+    color: white;
     /* border-radius: 20px; */
     /* width: 99%; */
     margin: auto;
     margin-top: 20px;
     /* height: 300px; */
+}
+
+.aboutSection .left {
+    background-color: #038480;
+}
+
+.aboutSection .right {
+    background-image:url(images/graduates.webp);
+    background-position: center calc(50% + 100px);
+    background-repeat: no-repeat;
+
+}
+
+.aboutSection a {
+    color: black;
 }
 
 
@@ -259,19 +291,13 @@ header img {
     margin-bottom: 0px;
 }
 
-.comingSoon {
+/* .comingSoon {
     display: none;
-}
+} */
 
 /* .aboutSection #studyGroupsSection img {
     width: 100%;
 } */
-
-
-
-
-
-
 
 .body {
     display: flex;
@@ -323,6 +349,7 @@ header img {
     display: flex;
     justify-content: space-around;
     align-items: center; /* center the images vertically */
+    
 }
 
 .container .row {
@@ -514,8 +541,13 @@ article .right h2 {
     list-style: none;
 }
 
+.black p {
+    font-size: 20px;
+    margin-left: 40px;
+}
+
 .red {
-    background-color: #C3AB85;
+    background-color: #038480;
     /* background-color: white; */
     font-size: 20px;
     height: 100%;
@@ -526,7 +558,7 @@ article .right h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: black;
+    /* color: black; */
 }
 
 
@@ -538,26 +570,26 @@ article .right h2 {
     display: none;
 }
 
-.comingSoonDisplay {
+/* .comingSoonDisplay {
     font-style: italic; 
     font-size: 20px; 
     background-color: black; 
     text-align: right; 
     padding-right: 20px; 
     margin-bottom: 0px; 
-    /* border-radius: 0 0 20px 20px; */
+    
     margin-top: -30px;
-}
+} */
 
 @media screen and (max-width: 768px) {
 
-    .comingSoonDisplay {
+    /* .comingSoonDisplay {
         display: none;
-    }
+    } */
 
-    .comingSoon {
+    /* .comingSoon {
         display: block;
-    }
+    } */
 
     .body ul {
         margin-bottom: 50px;
@@ -980,10 +1012,40 @@ footer p a{
     }
 }
 
+/* other pages */
+.main2 p {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #01A79E;
+    font-size: larger;
+    font-size: 30px;
+    color: white;
+}
+
 /* carrers.html */
-.hero2 {
+.heroCareers {
     background-image: url(./images/interenship.jpg);
     background-size: cover;
+    background-position: center calc(50% - 50px);  /*50% indicates horizontal property, 150px vertical property*/
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+}
+
+.heroCareers, .heroEvents, .heroNews, .heroTestemonials h2 {
+    color: white;
+    font-size: 7em;
+}
+
+/* events.html */
+.heroEvents {
+    background-image: url(./images/event.jpg);
+    background-size: cover;
+    background-position: center calc(50% - 150px); /* 50% indicates horizontal property, 150px vertical property */
     height: 300px;
     display: flex;
     align-items: center;
@@ -991,11 +1053,36 @@ footer p a{
     opacity: 0.6;
 }
 
-.hero2 h2 {
+/* news.html */
+.heroNews {
+    background-image: url(./images/news.png);
+    background-size: cover;
+    background-position: center calc(50% + 30px); /* 50% indicates horizontal property, 150px vertical property */
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+  }
+  
+  /* testemonials */
+  .heroTestemonials {
+    background-image: url(./images/testemonials.webp);
+    background-size: cover;
+    background-position: center calc(50% + 30px); /* 50% indicates horizontal property, 150px vertical property */
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+  }
+
+
+.main2 {
     color: white;
-    font-size: 7em;
-    /* background-color: white; */
-    position: absolute;
+    font-size: 200px;
+    background-color: white;
+    /* position: absolute; */
 }
 
 .images {

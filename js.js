@@ -25,6 +25,7 @@ setInterval(nextSlide, 3000); // change slide every 5 seconds
 
 
 
+
 // // section for Contact Us
 // const form = document.querySelector("form");
 
