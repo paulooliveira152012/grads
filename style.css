@@ -1,9 +1,12 @@
+/* general configuration */
 body {
     /* background-color: #E3E4E6; */
     font-family: 'Courier New', Courier, monospace;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-family: 'Oswald', sans-serif;
 }
+
+/* header and navbar */
 
 .navbar {
     background-color: white;
@@ -92,8 +95,8 @@ header img {
   }
 
   .description {
-    display: flex;
-    background-color: red;
+    /* display: flex; */
+    /* background-color: red; */
   }
 
 .hero {
@@ -154,16 +157,74 @@ header img {
     text-align: center;
 }
 
+/* advertise section */
+.mainAdvertisement {
+    height: 550px;
+    max-width: 1000px;
+    margin: auto;
+    /* background-color: green; */
+    margin-top: 50px;
+}
+
+.mainAdvertisement h2 {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.advertise {
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+    /* background-color: lightblue; */
+    text-align: center;
+    /* margin: 0; */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.advertise .box {
+    width: 30%;
+    height: 100%;
+    /* background-color: lightgray; */
+}
+
+.advertise .box img {
+    width: auto;
+    height: 100%;
+}
+
+.advertise p {
+    margin: auto;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+
+
 .offer {
     margin-top: 20px;
     padding: 20px;
     background-color: black;
     color: white;
     text-align: center;
+    display: block;
 }
 
 .offer span {
     color: yellow;
+}
+
+@media screen and (max-width: 700px) {
+
+    .advertise {
+        margin: -5px;
+    }
+
+    .advertise .box img {
+        width: auto;
+        height: 80%;
+    }
 }
 
 /* mobile responsiveness */
