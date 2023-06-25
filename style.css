@@ -142,7 +142,7 @@ header img {
 
   .slide h1:hover {
     cursor: copy;
-    color: #008082;
+    /* color: #008082; */
     opacity: 1;
     transition: .1s;
     cursor: pointer;
@@ -337,7 +337,8 @@ header img {
 }
 
 .aboutSection a {
-    color: black;
+    color: white;
+    text-decoration: underline;
 }
 
 
