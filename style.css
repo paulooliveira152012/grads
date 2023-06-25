@@ -523,6 +523,8 @@ article {
     justify-content: space-around;
     /* background-color: green; */
     width: 95%;
+    /* max-height: 200px; */
+    height: 300px;
 }
 
 /* Main */
@@ -642,6 +644,7 @@ article .right h2 {
     flex-direction: column;
     justify-content: center;
     /* color: black; */
+    padding: 20px;
 }
 
 
@@ -684,6 +687,7 @@ article .right h2 {
 
     .body article {
         flex-direction: column;
+        height: auto;
         /* background-color: yellow; */
     }
 
