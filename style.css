@@ -334,7 +334,6 @@ header img {
     background-size: cover;
     background-position: center calc(50% + 20px);
     background-repeat: no-repeat;
-
 }
 
 .aboutSection .download a {
@@ -475,6 +474,10 @@ header img {
 .aboutSection .right {
     display: flex;
     justify-content:space-evenly;
+}
+
+.aboutSection .right {
+    background-position: center calc(50% + 95px);
 }
 }
 
