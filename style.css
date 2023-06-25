@@ -336,9 +336,13 @@ header img {
 
 }
 
-.aboutSection a {
+.aboutSection .download a {
     color: white;
     text-decoration: underline;
+}
+
+.aboutSection .download a:hover {
+    color: #ffffff9a;
 }
 
 
