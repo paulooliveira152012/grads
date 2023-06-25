@@ -330,8 +330,9 @@ header img {
 }
 
 .aboutSection .right {
-    background-image:url(images/graduates.webp);
-    background-position: center calc(50% + 100px);
+    background-image:url(images/new/graduates.jpg);
+    background-size: cover;
+    background-position: center calc(50% + 20px);
     background-repeat: no-repeat;
 
 }
@@ -445,13 +446,19 @@ header img {
 
 .aboutSection {
     display: flex;
+    height: 500px;
     flex-direction: column;
     padding-bottom: 20px;
 }
 
+.aboutSection .right {
+    display: block;
+    margin-top: 20px;
+}
+
 .aboutSection .left {
     display: block;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .aboutSection .right {
