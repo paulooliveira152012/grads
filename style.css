@@ -104,7 +104,7 @@ header img {
 }
 
 .marketPlace {
-    background-image: url("./images/cash.jpg");
+    background-image: url("./images/new/money.jpg");
 }
 
 .tutoring {
@@ -112,11 +112,11 @@ header img {
 }
 
 .couchsurfing {
-    background-image: url("./images/couchsurfing.jpg");
+    background-image: url("./images/new/couchsurfing.jpg");
 }
 
 .rideShare {
-    background-image: url("./images/newRideShare.jpeg");
+    background-image: url("./images/new/carpool.jpg");
 }
 
 .studyGroups {
@@ -1183,6 +1183,11 @@ footer p a{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.logoSection img {
+    width: 100%;
+    /* border: 1px black solid; */
 }
 
 @media screen and (max-width: 768px) {
