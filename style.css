@@ -362,6 +362,10 @@ header img {
     .mainAdvertisement {
         margin-top: 200px;
     }
+
+    footer {
+        padding-bottom: 100px;
+    }
 }
 
 .aboutSection .download a {
