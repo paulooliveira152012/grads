@@ -294,10 +294,18 @@ header img {
 /* mobile dresponsiveness */
 @media screen and (max-width: 540px) {
     .advertise .box img{
-        background-color: red;
+        /* background-color: red; */
         width: 100%;
         height: auto;
     }
+
+    /* footer {
+        display: none;
+    } */
+
+    /* .heroCareers {
+        background-repeat: no-repeat;
+    } */
 }
 
 
@@ -919,8 +927,8 @@ footer {
     /* background-image: url("./images/footer2.jpg"); */
     background-color: #01A79E;
     color: white;
-    background-size: cover;
-    background-position: center;
+    /* background-size: cover; */
+    /* background-position: center; */
     /* padding-bottom: 75px; */
 }
 
@@ -1055,7 +1063,17 @@ footer p a{
     display: inline-block;
 }
 
+@media screen and (max-width: 1000px)  {
+    footer {
+        display: block;
+        position: relative;
+        bottom: 0;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
+
     footer .footerContent {
         height: auto;
     }
@@ -1126,7 +1144,7 @@ footer p a{
     background-image: url(./images/interenship1.jpg);
     background-size: cover;
     background-position: center calc(50% - 50px);  /*50% indicates horizontal property, 150px vertical property*/
-    height: 300px;
+    
     width: 100%;
     display: flex;
     align-items: center;
@@ -1137,6 +1155,13 @@ footer p a{
 .heroCareers, .heroEvents, .heroNews, .heroTestemonials h2 {
     color: white;
     font-size: 7em;
+    background-repeat: no-repeat;
+    height: 300px;
+    max-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
 }
 
 /* events.html */
@@ -1144,11 +1169,7 @@ footer p a{
     background-image: url(./images/event1.jpg);
     background-size: cover;
     background-position: center calc(50% - 150px); /* 50% indicates horizontal property, 150px vertical property */
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.6;
+    
 }
 
 /* news.html */
@@ -1156,11 +1177,6 @@ footer p a{
     background-image: url(./images/news1.png);
     background-size: cover;
     background-position: center calc(50% + 30px); /* 50% indicates horizontal property, 150px vertical property */
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.6;
   }
   
   /* testemonials */
@@ -1168,11 +1184,6 @@ footer p a{
     background-image: url(./images/testemonials.jpg);
     background-size: cover;
     background-position: center calc(50% + 30px); /* 50% indicates horizontal property, 150px vertical property */
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.6;
   }
 
 
@@ -1180,6 +1191,7 @@ footer p a{
     color: white;
     font-size: 200px;
     background-color: white;
+    margin-top: 50px;
     /* position: absolute; */
 }
 
