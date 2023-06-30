@@ -349,6 +349,21 @@ header img {
     background-repeat: no-repeat;
 }
 
+@media screen and (max-width:750px) {
+    .aboutSection .right {
+        display: none;
+    }
+
+    .aboutSection .right .container {
+        height: 400px;
+        display: block;
+    }
+
+    .mainAdvertisement {
+        margin-top: 200px;
+    }
+}
+
 .aboutSection .download a {
     color: white;
     text-decoration: underline;
@@ -438,7 +453,6 @@ header img {
     display: flex;
     justify-content: space-around;
     align-items: center; /* center the images vertically */
-    
 }
 
 .container .row {
@@ -1140,13 +1154,13 @@ footer p a{
 .heroCareers, .heroEvents, .heroNews, .heroTestemonials {
     color: white;
     font-size: 7em;
-    background-repeat: no-repeat;
     height: 300px;
     max-height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0.6;
+    background-repeat: no-repeat;
 }
 
 /* carrers.html */
