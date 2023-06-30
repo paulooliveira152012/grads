@@ -94,10 +94,6 @@ header img {
     opacity: 0.6;
   }
 
-  .description {
-    /* display: flex; */
-    /* background-color: red; */
-  }
 
 .hero {
     /* background-image: url("./images/hero.jpg"); */
@@ -246,6 +242,7 @@ header img {
     .container a {
      display: none;
     }
+    
 }
 
 /* mobile responsiveness */

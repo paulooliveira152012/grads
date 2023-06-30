@@ -30,6 +30,7 @@
 
     article {
       padding: 50px 100px;
+      height: 100%;
     }
 
     footer {
@@ -71,23 +72,28 @@
       background-color: white;
     }
 
-    .crew {
+    /* .crew {
       margin-top: 150px;
+    } */
+
+    main {
+      /* background-color: red; */
+      display: flex;
+      flex-direction: column;
     }
-
-    /* .crew p {
-      font-weight: lighter;
-      font-style: normal;
-    } */
-
-    /* main {
-      position: relative; 
-      min-height: 500px; 
-    } */
 
     @media screen and (max-width: 780px) {
       article {
         padding: 10px;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .crewSection {
+        margin-top: 150px;
+        background-color: red;
+        /* display: none; */
+        margin-top: 50px;
       }
     }
   </style>
@@ -171,7 +177,7 @@
         <p>Thank you for considering Grads for your academic and student needs. We are confident that our solutions will exceed your expectations, and we look forward to serving you. If you have any questions or would like to learn more about our company, please don't hesitate to contact us.</p>
       </article>
     
-      <div class="crewSection">
+      
         <article class="crew" style="display: block;">
           <h2>Meet our team members</h2>
             <div class="member">
@@ -189,7 +195,7 @@
             </div>
           </div>
         </article>
-      </div>
+      
 
     </main>
     
