@@ -100,27 +100,33 @@ header img {
   }
 
 .hero {
-    background-image: url("./images/hero.jpg");
+    /* background-image: url("./images/hero.jpg"); */
+    background-image: url("./images/hero1.jpg");
 }
 
 .marketPlace {
-    background-image: url("./images/new/money.jpg");
+    /* background-image: url("./images/new/money.jpg"); */
+    background-image: url("./images/new/money1.jpg");
 }
 
 .tutoring {
-    background-image: url("./images/tutoring.jpg");
+    /* background-image: url("./images/tutoring.jpg"); */
+    background-image: url("./images/new/tutoring1.jpg");
 }
 
 .couchsurfing {
-    background-image: url("./images/new/couchsurfing.jpg");
+    /* background-image: url("./images/new/couchsurfing.jpg"); */
+    background-image: url("./images/new/couchsurfing1.jpg");
 }
 
 .rideShare {
-    background-image: url("./images/new/carpool.jpg");
+    /* background-image: url("./images/new/carpool.jpg"); */
+    background-image: url("./images/new/carpool1.jpg");
 }
 
 .studyGroups {
-    background-image: url("./images/study.jpg");
+    /* background-image: url("./images/study.jpg"); */
+    background-image: url("./images/study1.jpg");
 }
 
 .slide h1 {
@@ -330,7 +336,8 @@ header img {
 }
 
 .aboutSection .right {
-    background-image:url(images/new/graduates.jpg);
+    /* background-image:url(images/new/graduates.jpg); */
+    background-image:url(images/new/graduates1.jpg);
     background-size: cover;
     background-position: center calc(50% + 20px);
     background-repeat: no-repeat;
@@ -1115,7 +1122,7 @@ footer p a{
 
 /* carrers.html */
 .heroCareers {
-    background-image: url(./images/interenship.jpg);
+    background-image: url(./images/interenship1.jpg);
     background-size: cover;
     background-position: center calc(50% - 50px);  /*50% indicates horizontal property, 150px vertical property*/
     height: 300px;
@@ -1133,7 +1140,7 @@ footer p a{
 
 /* events.html */
 .heroEvents {
-    background-image: url(./images/event.jpg);
+    background-image: url(./images/event1.jpg);
     background-size: cover;
     background-position: center calc(50% - 150px); /* 50% indicates horizontal property, 150px vertical property */
     height: 300px;
@@ -1145,7 +1152,7 @@ footer p a{
 
 /* news.html */
 .heroNews {
-    background-image: url(./images/news.png);
+    background-image: url(./images/news1.png);
     background-size: cover;
     background-position: center calc(50% + 30px); /* 50% indicates horizontal property, 150px vertical property */
     height: 300px;
@@ -1157,7 +1164,7 @@ footer p a{
   
   /* testemonials */
   .heroTestemonials {
-    background-image: url(./images/testemonials.webp);
+    background-image: url(./images/testemonials.jpg);
     background-size: cover;
     background-position: center calc(50% + 30px); /* 50% indicates horizontal property, 150px vertical property */
     height: 300px;
