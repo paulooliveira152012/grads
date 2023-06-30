@@ -245,6 +245,7 @@ header img {
     
 }
 
+
 /* mobile responsiveness */
 @media screen and (max-width: 480px) {
     .slide img {
@@ -1136,20 +1137,7 @@ footer p a{
     display: block;
 }
 
-/* carrers.html */
-.heroCareers {
-    background-image: url(./images/interenship1.jpg);
-    background-size: cover;
-    background-position: center calc(50% - 50px);  /*50% indicates horizontal property, 150px vertical property*/
-    
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.6;
-}
-
-.heroCareers, .heroEvents, .heroNews, .heroTestemonials h2 {
+.heroCareers, .heroEvents, .heroNews, .heroTestemonials {
     color: white;
     font-size: 7em;
     background-repeat: no-repeat;
@@ -1161,19 +1149,27 @@ footer p a{
     opacity: 0.6;
 }
 
+/* carrers.html */
+.heroCareers {
+    background-image: url(./images/interenship1.jpg);
+    background-size: cover;
+    background-position: center calc(50% - 50px);  /*50% indicates horizontal property, 150px vertical property*/
+    width: 100%;
+}
+
 /* events.html */
 .heroEvents {
     background-image: url(./images/event1.jpg);
     background-size: cover;
-    background-position: center calc(50% - 150px); /* 50% indicates horizontal property, 150px vertical property */
-    
+    background-position: center calc(50% - 50px); /* 50% indicates horizontal property, 150px vertical property */
+    width: 100%;
 }
 
 /* news.html */
 .heroNews {
     background-image: url(./images/news1.png);
     background-size: cover;
-    background-position: center calc(50% + 30px); /* 50% indicates horizontal property, 150px vertical property */
+    background-position: center calc(50% - 50px); /* 50% indicates horizontal property, 150px vertical property */
   }
   
   /* testemonials */
