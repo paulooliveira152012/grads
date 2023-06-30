@@ -9,7 +9,8 @@ body {
 /* header and navbar */
 
 .navbar {
-    background-color: white;
+    /* background-color: white; */
+    background-color: red;
     color: white;
 }
 
