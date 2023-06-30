@@ -921,7 +921,7 @@ footer {
     color: white;
     background-size: cover;
     background-position: center;
-    padding-bottom: 75px;
+    /* padding-bottom: 75px; */
 }
 
 footer a {
@@ -1113,11 +1113,12 @@ footer p a{
 .main2 p {
     width: 100%;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     background-color: #01A79E;
     font-size: larger;
     font-size: 30px;
     color: white;
+    display: block;
 }
 
 /* carrers.html */
