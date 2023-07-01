@@ -526,6 +526,13 @@ header img {
     }
 }
 
+@media screen and (max-width: 455px) {
+    .mainAdvertisement h2 {
+        display: block;
+        margin-top: 250px;
+    }
+}
+
 
 
 /* end of about section */
